@@ -1,1 +1,1 @@
-{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"title":"트리 쉐이킹(Tree Shaking)","categories":"블로그 featured"},"fields":{"slug":"/treeshaing/"}}}]}}}
+{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"title":"트리 쉐이킹(Tree Shaking)","categories":"블로그 featured"},"fields":{"slug":"/treeshaing/"}}},{"node":{"frontmatter":{"title":"트리 쉐이킹(Tree Shaking)","categories":"블로그 featured"},"fields":{"slug":"/cicd/"}}}]}}}
