@@ -1,12 +1,12 @@
 module.exports = {
-  title: `junglog.com`,
+  title: `JungLog`,
   description: `A neat developers`,
   language: `en`,
-  siteUrl: `https://www.junglog.com`,
+  siteUrl: `https://rnfltpgus.github.io/`,
   ogImage: `/og-image.png`,
   comments: {
     utterances: {
-      repo: ``, // https://utteranc.es/ 참고
+      repo: `https://rnfltpgus.github.io/`, // https://utteranc.es/ 참고
     },
   },
   ga: '0', // Google Analytics Tracking ID
