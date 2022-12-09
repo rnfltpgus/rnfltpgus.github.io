@@ -1,1 +1,1 @@
-{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"title":"CI/CD에 대해서","categories":"개발블로그"},"fields":{"slug":"/cicd/"}}},{"node":{"frontmatter":{"title":"트리 쉐이킹(Tree Shaking)","categories":"블로그 featured"},"fields":{"slug":"/treeshaing/"}}}]}}}
+{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"title":"CI/CD에 대해서","categories":"블로그"},"fields":{"slug":"/cicd/"}}},{"node":{"frontmatter":{"title":"트리 쉐이킹(Tree Shaking)","categories":"블로그 featured"},"fields":{"slug":"/treeshaing/"}}}]}}}
