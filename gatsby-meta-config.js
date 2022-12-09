@@ -6,7 +6,7 @@ module.exports = {
   ogImage: `/og-image.png`,
   comments: {
     utterances: {
-      repo: `https://rnfltpgus.github.io/`, // https://utteranc.es/ 참고
+      repo: `rnfltpgus/rnfltpgus.github.io`,
     },
   },
   ga: '0', // Google Analytics Tracking ID

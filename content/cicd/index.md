@@ -22,7 +22,7 @@ categories: 블로그
 - `지속적 배포`는 또한 성숙하고 입증된 지속적 통합 및 지속적인 전달 단계를 기반으로 함
   - 간단한 코드 변경이 정기적으로 마스터에 커밋되고, 자동화된 빌드 및 테스트 프로세스를 거치며 다양한 사전 프로덕션 환경으로 승격되며, 문제가 발생되지 않으면 최종적으로 배포됨
 
-![스크린샷 2022-10-02 오후 5.47.05.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e6e99f57-8a08-44c0-ba92-5a82fe2ee2a9/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-10-02_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_5.47.05.png)
+![CI/CD 프로세스](https://www.redhat.com/cms/managed-files/styles/wysiwyg_full_width/s3/ci-cd-flow-desktop.png?itok=2EX0MpQZ)
 
 ### CI / CD 종류
 
