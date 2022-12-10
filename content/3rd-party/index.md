@@ -1,9 +1,9 @@
 ---
-emoji: 🪦
+emoji: 🔦
 title: 써드 파티(3rd party)란?
 date: '2022-12-10 14:10:00'
 author: JungSany
-tags: blog gatsby 써드 파티 써드파트 3rd party 3rd-party
+tags: blog gatsby 써드 파티 써드파트 3rd party 3rd-party JungLog
 categories: 개발지식
 ---
 
@@ -14,6 +14,8 @@ categories: 개발지식
   - 퍼스트 파티 개발자 : 하드웨어 생산자가 직접 소프트웨어를 개발하는 경우
   - 세컨드 파티 개발자 : 하드웨어 생산자인 기업과 자사간의 관계(또는 하청업체)에 속한 소프트웨어 개발자
   - 서트 파티 개발자 : 아무 관련없는 제 3자 소프트웨어 개발자
+
+<br/>
 
 ### 결론
 

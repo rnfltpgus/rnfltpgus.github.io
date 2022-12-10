@@ -3,7 +3,7 @@ emoji: 🪦
 title: React 대규모의 서비스 최적화 방안
 date: '2022-12-10 14:10:00'
 author: JungSany
-tags: blog gatsby 트리쉐이킹 TreeShaking react 대규모 서비스 최적화 방안 최적화방안 import webpack code splitting lazy suspense dynamic 동적 분할
+tags: blog gatsby 트리쉐이킹 TreeShaking react 대규모 서비스 최적화 방안 최적화방안 import webpack code splitting lazy suspense dynamic 동적 분할 JungLog
 categories: React 개발지식
 ---
 
@@ -19,15 +19,21 @@ categories: React 개발지식
 
 그 후 추가적으로 `React.memo`와 `useMemo`, `useCallback`에 대해 말을 하였지만 면접관의 질문에 대한 답변을 말한 것이 아니여서 이 글을 작성하게 되었다.
 
+<br/>
+
 ### 지금 드는 생각
 
 단순하게 최적화를 하기위해서는 코드를 적재적소에 사용한다. 라는 생각이 들게 되었는데 이유는 작성한 코드들이 항상 사용되는 것이 아니여서 필요할 경우에만 사용하면 된다 라는 생각이 들었다. 그래서 다음 면접시, 모르는 답안이 나올 경우 큰 맥락을 생각하여 큰 맥락이라도 이야기를 한다면 좀 더 좋은 인상을 주었을 것 같다고 생각하였다.
+
+<br/>
 
 ### 그래서 대규모 서비스 최적화 방안에는 어떤 것이 있는가?
 
 기본적으로 **웹 사이트의 속도를 올리기 위해서는 큰 파일의 용량을 줄여야하는데, 크게 코드의 크기를 줄이는 방법(트리쉐이킹 등)과 코드를 분할하는 방법이 있다.**
 
-1. \***\*웹팩 설정을 이용한 코드 스플리팅(Code Splitting)\*\***
+<br/>
+
+1. **웹팩 설정을 이용한 코드 스플리팅(Code Splitting)**
 
 - Webpack에서는 코드를 분할 하기위해, 목적 별로 여러 `Entry`로 분할이 가능하다.
   - 이것은 `하나의 큰 번들을 여러개의 작은 번들로 분할`해준다.
@@ -61,6 +67,8 @@ module.exports = {
   },
 };
 ```
+
+<br/>
 
 2. **동적 코드 분할 Dynamic Import (Lazy, Suspense)**
 
@@ -123,9 +131,13 @@ export default App;
 
 - 위의 코드로 테스트 진행 시, 네트워크 탭의 설정을 느린 3g로 바꾸어 확인한다면 Suspense fallback에 작성한 코드를 확인할 수 있다.
 
+<br/>
+
 3. **트리 쉐이킹 적용**
 
 - [트리 쉐이킹(Tree Shaking)](https://rnfltpgus.github.io/treeshaing/)
+
+<br/>
 
 ### 용어정리
 
@@ -139,7 +151,7 @@ export default App;
 
 **chunk**: 애플리케이션 코드를 각각 다른 파일로 나눈 것
 
-\***\*SplitChunksPlugin:\*\*** 초기 청크를 변경하면 HTML 파일이 프로젝트를 실행하기 위해 포함해야 하는 스크립트 태크에 영향을 미치기 때문에 기본적으로 on-demand 청크에만 영향을 미침
+**SplitChunksPlugin:** 초기 청크를 변경하면 HTML 파일이 프로젝트를 실행하기 위해 포함해야 하는 스크립트 태크에 영향을 미치기 때문에 기본적으로 on-demand 청크에만 영향을 미침
 
 - 원래 청크(및 그 안에 가저온 모듈)는 webpack 내부 그래프에서 부모-자식 관계로 연결되어있는데, `commonsChunkPlugin`은 중복되는 의존성을 피하고자 사용되었지만, 추가 최적화는 불가능하여 webpack v4부터 `optimization.splitChunks`를 위해 `CommonsChounkPlugin`은 사용하지 않음
 - 다음 조건에 따라 자동으로 청크를 분할

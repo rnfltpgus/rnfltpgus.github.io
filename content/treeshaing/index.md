@@ -3,7 +3,7 @@ emoji: 🧹
 title: 트리 쉐이킹(Tree Shaking)
 date: '2022-12-09 18:30:00'
 author: JungSany
-tags: blog gatsby 트리쉐이킹 TreeShaking
+tags: blog gatsby 트리쉐이킹 TreeShaking JungLog
 categories: 개발지식
 ---
 
@@ -11,6 +11,8 @@ categories: 개발지식
 
 - 애플리케이션을 트리의 각 노드들 즉, 일종의 나무와 같이 보고 나무를 흔들면 죽은 잎사귀들이 떨어지는 모습에 착안해 `Tree-shaking`이라고 명명하였다고 한다.
 - 사용하지 않는 코드를 제거하는 기법
+
+<br/>
 
 ### 방법
 
@@ -39,6 +41,8 @@ const drawCanvas = (pose, video, videoWidth, videoHeight, canvas, flag) => {
 export default drawCanvas;
 ```
 
+<br/>
+
 2. **Babel이 ES6 모듈을 commonjs module로 변환하지 않도록 조치(.babelrc 설정)**
 
 - Babel은 대부분의 웹 애플리케이션에서 필수로 사용하는 도구 중 하나 이지만 `babel-preset-env`를 사용중에 있다면 `ES6`를 자동으로 `commonjs`로 `변환`한다.
@@ -57,6 +61,8 @@ export default drawCanvas;
 ```
 
 - 또한 위와 같이 설정을 하면 웹팩은 코드를 광범위하게 호환되는 형식으로 변환하므로, 이 프로세스는 호환성 문제를 일으키지 않는다고 한다.
+
+<br/>
 
 3. **프로젝트의 모듈들이 Tree Shaking시, `Side Effect를 발생시키는지 여부를 확인`해야 한다.(package.json 설정)**
 
@@ -101,11 +107,15 @@ console.log(sheriffs); // ["jung", "gim", "gong", "pack"]
 }
 ```
 
+<br/>
+
 ### 생각
 
 - 이러한 작업들이 서비스 개발 단계에 있어서 큰 영향을 미치진 않겠지만, 이런 디테일한 작업들이 습관화 된다면 결국 서비스의 퀄리티를 결정하는 요소라고 생각한다.
 - 하지만 위의 방법으로 인해 문제가 생기는 경우가 있는가에 대해서는 더 찾아봐야 할 것 같다.
 - 그리고 로데쉬 함수로도 트리쉐이킹 방법이 있다고 하니 추가적으로 알아봐야 될 것이 있는 것 같다.
+
+<br/>
 
 ### 용어정리
 
