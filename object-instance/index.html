@@ -70,12 +70,6 @@
 <li>이때 <code class="language-text">할당, 반환된 Object를 인스턴스(instance)</code>라고 부른다.</li>
 <li>new 연산자를 사용하여 Object를 생성하여 변수에 할당할 수 있으며, 변수에 할당된 Object가 instance인 것이다.</li>
 </ul>
-<br/>
-<h2 id="instance를-사용하는-이유는" style="position:relative;"><a href="#instance%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0%EB%8A%94" aria-label="instance를 사용하는 이유는 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>instance를 사용하는 이유는?</h2>
-<ul>
-<li>instance마다 다른 값을 유지/제어하기 위해서 instance를 생성하는 것이다.</li>
-<li>다시말해, 원본의 값을 그대로 사용하면 원본의 데이터가 변경되기 떄문에 instance를 생성하여 원본의 값을 건들지않고 사용하기 위해 instance를 생성하여 사용하는 것이다.</li>
-</ul>
 <div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">// new 연산자 또는 객체 리터럴 방식를 사용하여 Object를 생성하여,</span>
 <span class="token comment">// 변수에 할당 or 반환된 Object가 instance이다.</span>
 <span class="token keyword">const</span> obj1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Object</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -84,6 +78,12 @@
 <span class="token comment">// 콘솔에 찍히는 값은 Instance인 {}가 찍힌다.</span>
 console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj1<span class="token punctuation">)</span><span class="token punctuation">;</span>
 console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj2<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<br/>
+<h2 id="instance를-사용하는-이유는" style="position:relative;"><a href="#instance%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0%EB%8A%94" aria-label="instance를 사용하는 이유는 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>instance를 사용하는 이유는?</h2>
+<ul>
+<li>instance마다 다른 값을 유지/제어하기 위해서 instance를 생성하는 것이다.</li>
+<li>다시말해, 원본의 값을 그대로 사용하면 원본의 데이터가 변경되기 떄문에 instance를 생성하여 원본의 값을 건들지않고 사용하기 위해 instance를 생성하여 사용하는 것이다.</li>
+</ul>
 <br/>
 <h3 id="참고링크" style="position:relative;"><a href="#%EC%B0%B8%EA%B3%A0%EB%A7%81%ED%81%AC" aria-label="참고링크 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>참고링크</h3>
 <p><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object">object MDN</a></p>
