@@ -43,7 +43,7 @@ module.exports = {
       // ========================================================
       {
         date: '2021.11 ~',
-        activity: 'Hello, world, 개발자 입문',
+        activity: 'Hello world!, 개발자 입문',
         links: {},
       },
       {

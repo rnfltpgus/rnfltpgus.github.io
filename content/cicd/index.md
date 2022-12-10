@@ -4,7 +4,7 @@ title: CI/CD에 대해서
 date: '2022-12-09 19:00:00'
 author: JungSany
 tags: blog gatsby CI CD 지속배포 지속적인통합 CI/CD
-categories: 블로그
+categories: 개발지식
 ---
 
 ### CI란?
@@ -31,6 +31,18 @@ categories: 블로그
 - TravisCI
 - Github Actions
 - etc
+
+<br/>
+
+### 참고링크
+
+[RedHat Ci/CD](https://www.redhat.com/ko/topics/devops/what-is-ci-cd)
+
+[드림코딩 Ci/CD](https://www.youtube.com/watch?v=0Emq5FypiMM)
+
+[seosh817님 글](https://seosh817.tistory.com/104)
+
+<br/>
 
 ```toc
 

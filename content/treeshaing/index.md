@@ -4,7 +4,7 @@ title: 트리 쉐이킹(Tree Shaking)
 date: '2022-12-09 18:30:00'
 author: JungSany
 tags: blog gatsby 트리쉐이킹 TreeShaking
-categories: 블로그 featured
+categories: 개발지식
 ---
 
 ### 정의
@@ -39,7 +39,7 @@ const drawCanvas = (pose, video, videoWidth, videoHeight, canvas, flag) => {
 export default drawCanvas;
 ```
 
-1. **Babel이 ES6 모듈을 commonjs module로 변환하지 않도록 조치(.babelrc 설정)**
+2. **Babel이 ES6 모듈을 commonjs module로 변환하지 않도록 조치(.babelrc 설정)**
 
 - Babel은 대부분의 웹 애플리케이션에서 필수로 사용하는 도구 중 하나 이지만 `babel-preset-env`를 사용중에 있다면 `ES6`를 자동으로 `commonjs`로 `변환`한다.
 - 좋은 기능이지만 트리 쉐이킹 관점에서는 그렇지 못하다고 한다.
@@ -58,7 +58,7 @@ export default drawCanvas;
 
 - 또한 위와 같이 설정을 하면 웹팩은 코드를 광범위하게 호환되는 형식으로 변환하므로, 이 프로세스는 호환성 문제를 일으키지 않는다고 한다.
 
-1. **프로젝트의 모듈들이 Tree Shaking시, `Side Effect를 발생시키는지 여부를 확인`해야 한다.(package.json 설정)**
+3. **프로젝트의 모듈들이 Tree Shaking시, `Side Effect를 발생시키는지 여부를 확인`해야 한다.(package.json 설정)**
 
 - 예측 가능한 입력을 가지고 동일하게 함수의 스코프 밖에 어떤 것도 변경하지 않으면서 예측 가능한 결과를 반환하는 모듈이 안전하게 트리쉐이킹 할 수 있는 Dependency이다.
 - 이때 말하는 `**Side Effect**`의 예시는 아래와 같이 설명할 수 있을 것 같습니다.
@@ -114,6 +114,24 @@ Side Effect: `의도치않은 결과, 렌더링 중에 발생하는 것이 아�
 - `절차형 프로그래밍`에서는 Side Effect가 흔히 존재하였고, 이는 프로그램을 읽기 어렵게하고 실행상태를 예측하기 어렵게 하며 개발비용을 증가 시켰다.
 - 이에 따라 `선언형 프로그래밍` 방식으로 지향하게 되면서 Side Effect를 최소화 하는 방향으로 바뀌고 있다.
   - 선언형 프로그래밍 방식을 사용하게 되면 함수가 매개변수를 통해 연산을 수행하게 되면 함수에 작성된 로직대로 `일관되고 예측 가능한 결과과 반환`되기 때문이다.
+
+<br/>
+
+### 참고링크
+
+[웹팩 Tree Shaking](https://webpack.kr/guides/tree-shaking/)
+
+[TypeScript enum을 사용하지 않는 게 좋은 이유를 Tree-shaking 관점에서 소개합니다.](https://engineering.linecorp.com/ko/blog/typescript-enum-tree-shaking/)
+
+[트리 쉐이킹으로 자바스크립트 페이로드 줄이기](https://ui.toast.com/weekly-pick/ko_20180716)
+
+[트리쉐이킹으로 자바스크립트 사이즈 줄이기](https://yceffort.kr/2021/08/javascript-tree-shaking)
+
+[Dependency Infection](https://medium.com/@jang.wangsu/di-dependency-injection-%EC%9D%B4%EB%9E%80-1b12fdefec4f)
+
+[번들링도 미니멀리즘이 필요하다.](https://brunch.co.kr/@swimjiy/24)
+
+<br/>
 
 ```toc
 
