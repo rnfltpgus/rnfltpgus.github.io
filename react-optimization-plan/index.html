@@ -77,7 +77,7 @@
 <p>기본적으로 <strong>웹 사이트의 속도를 올리기 위해서는 큰 파일의 용량을 줄여야하는데, 크게 코드의 크기를 줄이는 방법(트리쉐이킹 등)과 코드를 분할하는 방법이 있다.</strong></p>
 <br/>
 <ol>
-<li>*<strong>*웹팩 설정을 이용한 코드 스플리팅(Code Splitting)**</strong></li>
+<li><strong>웹팩 설정을 이용한 코드 스플리팅(Code Splitting)</strong></li>
 </ol>
 <ul>
 <li>Webpack에서는 코드를 분할 하기위해, 목적 별로 여러 <code class="language-text">Entry</code>로 분할이 가능하다.
@@ -197,7 +197,7 @@ module<span class="token punctuation">.</span>exports <span class="token operato
 <p><strong>Loader (로더 등록)</strong>: Css나 이미지, 웹폰트, JSX, VUE 등 다양한 종류의 파일을 함께 번들링할 수 있다.</p>
 <p><strong>Plugin (플러그인 등록)</strong>: 로더로 설정이 애매한 부분들을 커버할 수 있음</p>
 <p><strong>chunk</strong>: 애플리케이션 코드를 각각 다른 파일로 나눈 것</p>
-<p>*<strong>*SplitChunksPlugin:**</strong> 초기 청크를 변경하면 HTML 파일이 프로젝트를 실행하기 위해 포함해야 하는 스크립트 태크에 영향을 미치기 때문에 기본적으로 on-demand 청크에만 영향을 미침</p>
+<p><strong>SplitChunksPlugin:</strong> 초기 청크를 변경하면 HTML 파일이 프로젝트를 실행하기 위해 포함해야 하는 스크립트 태크에 영향을 미치기 때문에 기본적으로 on-demand 청크에만 영향을 미침</p>
 <ul>
 <li>원래 청크(및 그 안에 가저온 모듈)는 webpack 내부 그래프에서 부모-자식 관계로 연결되어있는데, <code class="language-text">commonsChunkPlugin</code>은 중복되는 의존성을 피하고자 사용되었지만, 추가 최적화는 불가능하여 webpack v4부터 <code class="language-text">optimization.splitChunks</code>를 위해 <code class="language-text">CommonsChounkPlugin</code>은 사용하지 않음</li>
 <li>다음 조건에 따라 자동으로 청크를 분할
