@@ -26,7 +26,7 @@ categories: 개발지식
 - Security key: 이미지의 새 버전마다 고유한 보안 키를 필요로 하게하여, 다른 사람이 이미지의 새 버전을 만드는 것을 방지
 - Transformations: 다양한 이미지 변환 제공(아래와 같이 매개변수를 기반으로 이미지 변화가 가능하다는 말로 생각할 수 있을 것 같다.)
 
-![dns서버 이미지 스타일링 예시](https://velog.velcdn.com/images%2Fhustle-dev%2Fpost%2F95051695-cbee-4b7d-be7d-4ae3f7a02197%2Fimage.png)
+![dns서버 이미지 스타일링 예시](https://web-dev.imgix.net/image/admin/OIF2VcXp8P6O7tQvw53B.jpg?auto=format&w=1600)
 
 <br/>
 
