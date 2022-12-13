@@ -4,7 +4,7 @@ title: React 대규모의 서비스 최적화 방안
 date: '2022-12-10 14:10:00'
 author: JungSany
 tags: blog gatsby 트리쉐이킹 TreeShaking react 대규모 서비스 최적화 방안 최적화방안 import webpack code splitting lazy suspense dynamic 동적 분할 JungLog
-categories: React 개발지식
+categories: React 개발지식 최적화
 ---
 
 면접에서 기술질문으로 아래와 같은 질문을 받게되었다.

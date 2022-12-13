@@ -4,7 +4,7 @@ title: 트리 쉐이킹(Tree Shaking)
 date: '2022-12-09 18:30:00'
 author: JungSany
 tags: blog gatsby 트리쉐이킹 TreeShaking JungLog
-categories: 개발지식
+categories: 개발지식 최적화
 ---
 
 ### 정의

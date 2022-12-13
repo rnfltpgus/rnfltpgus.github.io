@@ -4,7 +4,7 @@ title: CDN 서버를 이용한 이미지 최적화
 date: '2022-12-11 15:40:00'
 author: JungSany
 tags: blog gatsby JungLog log jung png svg cdn aws 이미지 최적화 server
-categories: 개발지식
+categories: 개발지식 최적화
 ---
 
 ### CDN이란?
