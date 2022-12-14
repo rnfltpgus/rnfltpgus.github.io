@@ -84,7 +84,7 @@ module.exports = {
       {
         title: 'Poke Poke Coching',
         description:
-          '현재 저의 상황처럼 앉아서 공부하는 시간이 많은 또는 업무를 하는 사람들을 위한 서비스입니다. 앉아서 자세의 흐트러짐, 시간체크, 스트레칭을 이용할 수 있습니다.',
+          '현재 저의 상황처럼 앉아서 공부하는 시간이 많은 또는 업무를 하는 사람들을 위한 서비스입니다. 앉아서 자세의 흐트러짐, 시간체크, 스트레칭 모드를 이용할 수 있습니다.',
         techStack: ['Tensorflow', 'postNet', 'React', 'RearTime'],
         thumbnailUrl: 'pokepokecoching.png',
         links: {
