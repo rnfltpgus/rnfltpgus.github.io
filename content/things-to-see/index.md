@@ -23,6 +23,8 @@ categories: 앞으로만
 
 [useEffect 완벽 가이드](https://overreacted.io/ko/a-complete-guide-to-useeffect/)
 
+[WebRTC 응용 서비스를 개발하는 2가지 방법](https://tech.kakaoenterprise.com/121)
+
 <br/>
 
 ```toc
