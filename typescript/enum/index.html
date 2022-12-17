@@ -70,19 +70,19 @@
 <li>임의의 숫자나 문자열을 할당할 수 있으며, 하나의 유형으로 사용해서 버그를 줄일 수 있음</li>
 <li>TypeScript가 자체적으로 구현하는 기능</li>
 </ul>
-<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// 아무것도 지정하지 않은 경우에는 0부터 숫자를 매깁니다.</span>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// 아무것도 지정하지 않은 경우에는 0부터 숫자를 매긴다.</span>
 <span class="token keyword">enum</span> <span class="token constant">MOBILE_OS</span> <span class="token punctuation">{</span>
   <span class="token constant">IOS</span><span class="token punctuation">,</span> <span class="token comment">// 0</span>
   <span class="token constant">ANDROID</span><span class="token punctuation">,</span> <span class="token comment">// 1</span>
 <span class="token punctuation">}</span>
 
-<span class="token comment">// 임의의 숫자나 문자열을 할당할 수도 있습니다</span>
+<span class="token comment">// 임의의 숫자나 문자열을 할당할 수도 있다.</span>
 <span class="token keyword">enum</span> <span class="token constant">MOBILE_OS</span> <span class="token punctuation">{</span>
   <span class="token constant">IOS</span> <span class="token operator">=</span> <span class="token string">'iOS'</span><span class="token punctuation">,</span>
   <span class="token constant">ANDROID</span> <span class="token operator">=</span> <span class="token string">'Android'</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span>
 
-<span class="token comment">// 아래와 같이 유형으로 사용할 수도 있습니다</span>
+<span class="token comment">// 아래와 같이 유형으로 사용할 수도 있다.</span>
 <span class="token keyword">const</span> os<span class="token operator">:</span> <span class="token constant">MOBILE_OS</span> <span class="token operator">=</span> <span class="token constant">MOBILE_OS</span><span class="token punctuation">.</span><span class="token constant">IOS</span><span class="token punctuation">;</span>
 <span class="token keyword">function</span> <span class="token function">detectOSType</span><span class="token punctuation">(</span>userAgent<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token constant">MOBILE_OS</span> <span class="token punctuation">{</span>
   <span class="token comment">// ...</span>
