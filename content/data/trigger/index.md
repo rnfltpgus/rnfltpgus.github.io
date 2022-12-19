@@ -48,11 +48,21 @@ categories: 개발지식 데이터
 
 <br/>
 
+### 용어정리
+
+- DDL(Data Definition Language): 데이터베이스를 정의하는 언어이며, 데이터를 생성, 수정, 삭제하는 등의 데이터의 전체의 골격을 결정하는 역할을 하는 언어
+- DML(Data Manipulation Language): 정의된 데이터베이스에 입력된 레코드를 조회하거나 수정하거나 삭제하는 등의 역할을 하는 언어
+- DCL(Data Control Language): 데이터베이스에 접근하거나 객체에 권한을 주는등의 역할을 하는 언어
+
+<br/>
+
 ### 참고링크
 
 [[DB] Trigger 트리거 개요 및 장단점](https://runcoding.tistory.com/32)
 
 [트리거(Trigger)의 개념과 목적 그리고 구성](https://computer-science-student.tistory.com/129)
+
+[DDL/DML/DCL 이란?](https://velog.io/@ksk5401/DDL-DML-DCL-%EC%9D%B4%EB%9E%80)
 
 <br/>
 
