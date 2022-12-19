@@ -3,7 +3,7 @@ emoji: 🌗
 title: Redux Thunk를 사용하는 이유
 date: '2022-12-19 14:16:00'
 author: JungSany
-tags: blog gatsby 트리쉐이킹 TreeShaking react thunk 비동기처리 재사용성 유지보수
+tags: blog gatsby JungLog log jung typescript react thunk 비동기처리 재사용성 유지보수
 categories: React
 ---
 
@@ -122,21 +122,7 @@ export const productSlice = createSlice({
   name: 'product',
   initialState,
   reducers: {
-    addFilter: (state, action: PayloadAction<string>) => {
-      // ...
-    },
-    removeFilter: (state, action: PayloadAction<string>) => {
-      // ...
-    },
-    resetFilter: (state) => {
-      // ...
-    },
-    setSearchKeyword(state, action: PayloadAction<string>) {
-      // ...
-    },
-    addListLength(state, action: PayloadAction<number>) {
-      // ...
-    },
+    // ...
   },
   extraReducers: (builder) => {
     builder.addCase(fetchProduct.pending, (state) => {
