@@ -37,7 +37,7 @@ let user = {
 
 <br/>
 
-### 요약
+### 그래서 객체란?
 
 1. 객체는 몇 가지 특수한 기능을 가진 연관 배열(associative array)이다.
 2. 객체는 프로퍼티(키-값 쌍)를 저장한다.
@@ -52,6 +52,113 @@ let user = {
 - Date : 날짜와 시간 정보를 저장할 때 쓰임
 - Error : 에러 정보를 저장할 때 쓰임
 - 기타 등등
+
+<br/>
+
+### 객체를 생성하는 방법으로는?
+
+1. **객체 생성자:**
+
+   빈 객체를 만드는 가장 간단한 방법은 Object 생성자를 사용하는 것인데, 현재 이 접근 방식은 권장되지 않는다.
+
+   ```jsx
+   const object = new Object();
+   ```
+
+<br/>
+
+2. **객체의 생성 방법:**
+
+   Object의 create 메소드는 프로토타입 객체를 매개변수로 전달하여 새 객체를 생성한다.
+
+   ```jsx
+   const object = Object.create(null);
+   ```
+
+<br/>
+
+3. **객체 리터럴 구문: 개체를 만드는 방법 중 가장 쉬운 방법**
+
+   개체 리터럴 구문(또는 개체 이니셜라이저)은 중괄호로 묶인 쉼표로 구분된 이름-값 쌍 집합이다.
+
+   ```jsx
+   const object = {
+     name: 'Sudheer',
+     age: 34,
+   };
+   ```
+
+   - Object literal property values can be of any data type, including array, function, and nested object.
+   - 개체 리터럴 속성 값은 배열, 함수 및 중첩된 개체를 포함한 모든 데이터 유형일 수 있다.
+
+<br/>
+
+4. **함수 생성자:**
+
+   함수를 생성하고 new 연산자를 적용하여 객체 인스턴스를 생성한다.
+
+   ```jsx
+   function Person(name) {
+     this.name = name;
+     this.age = 21;
+   }
+
+   const object = new Person('Sudheer');
+   ```
+
+<br/>
+
+5. **프로토타입이 있는 함수 생성자:**
+
+   이것은 함수 생성자와 유사하지만 속성 및 메서드에 대해 프로토타입을 사용한다.
+
+   ```jsx
+   function Person() {}
+   Person.prototype.name = 'Sudheer';
+
+   const object = new Person();
+   ```
+
+   이것은 함수 프로토타입이 있는 객체 생성 메소드로 생성된 인스턴스와 인스턴스 및 매개변수를 인수로 사용하여 해당 함수를 호출하는 것과 같다.
+
+   ```jsx
+   function func() {};
+
+   new func(x, y, z);`
+
+   **(또는)**
+
+   // Create a new instance using function prototype.
+   const newInstance = Object.create(func.prototype)
+
+   // Call the function
+   const result = func.call(newInstance, x, y, z),
+
+   // If the result is a non-null object then use it otherwise just use the new instance.
+   console.log(result && typeof result === 'object' ? result : newInstance);
+   ```
+
+<br/>
+
+6. **ES6 클래스 구문:**
+
+   ES6에는 객체를 생성하는 클래스 기능이 도입되었다.
+
+   ```jsx
+   class Person {
+     constructor(name) {
+       this.name = name;
+     }
+   }
+
+   const object = new Person('Sudheer');
+   ```
+
+<br/>
+
+7. **싱글톤 패턴:**
+
+   Singleton은 한 번만 인스턴스화할 수 있는 개체인데, 생성자에 대한 반복된 호출은 동일한 인스턴스를 반환하고 이러한 방식으로 여러 인스턴스를 실수로 생성하지 않도록 할 수 있다.
 
 <br/>
 
