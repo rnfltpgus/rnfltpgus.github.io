@@ -15,7 +15,7 @@ module.exports = {
     bio: {
       role: `Developer`,
       description: ['말로 끝이 아닌', 'A neat developers'],
-      thumbnail: 'sample.png',
+      thumbnail: 'sany.png',
     },
     social: {
       github: `https://github.com/rnfltpgus`,
