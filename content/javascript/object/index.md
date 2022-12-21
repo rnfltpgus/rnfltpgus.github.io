@@ -166,9 +166,12 @@ let user = {
 
 [객체](https://ko.javascript.info/object)
 
+[Object](https://poiemaweb.com/js-object)
+
+[JavaScript 객체 기본](https://developer.mozilla.org/ko/docs/Learn/JavaScript/Objects/Basics)
+
 <br/>
 
 ```toc
-
 
 ```
