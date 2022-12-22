@@ -19,6 +19,8 @@ categories: 앞으로만
 
 [이미지 CDN을 사용하여 이미지 최적화](https://web.dev/i18n/ko/image-cdns/)
 
+[리액트의 렌더링은 어떻게 일어나는가?](https://yceffort.kr/2022/04/deep-dive-in-react-rendering)
+
 [Be Aware of Stale Closures when Using React Hooks](https://dmitripavlutin.com/react-hooks-stale-closures/)
 
 [useEffect 완벽 가이드](https://overreacted.io/ko/a-complete-guide-to-useeffect/)
