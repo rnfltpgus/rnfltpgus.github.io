@@ -27,8 +27,8 @@ categories: 개발지식
 
 ![url 입력 후 일어나는 네트워크 상에서의 전체적인 흐름 이미지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F993D344D5C2347F62E)
 
-1. DNS 서버가 www.google.com를 호스팅하는 서버의 IP 주소를 찾는다.
-2. 찾은 ip 주소와 url 내부의 port 정보를 바탕으로 **HTTP 요청 메세지**를 생성합니다.
+1. 브라우저에서 URL을 해석 후, DNS 서버를 통하여 URL(www.google.com)을 호스팅하는 서버의 IP 주소를 찾는다.
+2. 찾은 ip 주소와 url 내부의 port 정보를 바탕으로 **HTTP 요청 메세지**를 생성한다.
 
    `HTTP Method` + `path부터 url 정보` + `HTTP 버전 정보` + `Host 정보` (HTTP 요청 메시지 구성)
 
@@ -52,25 +52,58 @@ categories: 개발지식
 
 ## 렌더링 엔진이란?
 
+![렌더링 동작 과정](https://velog.velcdn.com/images/soopy368/post/485f811b-3601-4248-aff3-d773d54af9a1/image.png)
+
 - `렌더링 엔진`은 **요청 받은 내용을 브라우저 화면에 표시하는 역할**을 한다.
 - 브라우저마다 사용하는 렌더링 엔진이 다르므로 크로스 브라우징 이슈가 종종 발생하곤 한다.
 - 보통 통신으로부터 요청한 문서의 내용을 얻는 것부터 시작한다.
+
   - 이때 브라우저는 HTML과 CSS를 나누어서 읽는다.
   - 렌더링 엔진은 HTM과 CSS 파싱이 끝나기 전에 이후의 과정을 수행하여 미리 사용자에게 보여줄 수 있는 내용들을 출력하기 위해 계속 통신을 하면서 전송된 내용에 대한 배치와 그리기 과정을 진행한다.
-
-![렌더링 동작 과정](https://velog.velcdn.com/images/soopy368/post/485f811b-3601-4248-aff3-d773d54af9a1/image.png)
+  - 자세한 내용은 아래를 통해 설명하겠다.
 
 <br/>
 
 ### 렌더링 동작 과정
 
+![렌더링 동작 과정 약식](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FLCnaB%2FbtqIwDAOpap%2FsFlMNr2w37fPe5hd6gfEXk%2Fimg.png)
+
 1. **DOM 트리 구축을 위한 HTML 파싱**
 
-   → `브라우저는 서버로부터 HTML 문서를 모두 전달받는다.` `렌더링 엔진`은 전달받은 `HTML 문서`를 파싱해서 DOM 트리를 구축한다. 그리고 `외부 CSS 파일과 스타일 요소`도 `파싱`한다.
+   → `브라우저는 서버로부터 HTML 문서를 모두 전달받는다.` 이후 `렌더링 엔진`은 전달받은 `HTML 문서`와 `외부 CSS 파일과 스타일 요소`를 파싱해서 `DOM 트리와 CSSOM 트리`를 구축한다.
 
-2. **`렌더 트리 구축`** : DOM(Document Object Model) 트리와 CSSOM 트리의 `정보의 조합`
+2. **`렌더 트리 구축`** : DOM(Document Object Model) 트리와 CSSOM 트리의 `정보를 조합`
 3. **렌더 트리 배치** : `렌더 트리의 각 노드에 대해서 화면 상에서 어디에 배치할지 위치와 크기를 결정`
 4. **렌더 트리 그리기** : UI 백엔드에서 `렌더 트리를 그리고, 화면에 출력(프린트)됨`
+
+<br/>
+
+### Replow와 Repaint
+
+![렌더링 동작 과정 약식](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FFzaAd%2FbtqIrukrwy2%2F6ewnSTctH6z1XI5F7L2Qy0%2Fimg.png)
+
+**Replow**: 노드의 크기 또는 위치가 변경되어 현재 레이아웃에 영향을 미쳐서 배치를 다시 해야하는 경우 Replow가 발생한다.
+
+**Repaint**: Reflow가 발생한 뒤나 단순한 스타일 변경 후에 발생한다.
+
+<br/>
+
+### 알아두면 좋은 사항
+
+- `렌더링 성능 향상을 위해서`는 **Reflow를 최대한 줄여야한다.**
+- 클래서 변화에 따른 스타일 변경 시, 최대한 DOM 주고 상 끝단에 위치한 노드에 준다.
+- 인라인 스타일(sytle 속성으로 직접 Tag에 스타일 하는 것)을 배제한다.
+- 애니메이션이 들어간 노드는 position을 fixed 또는 absolute로 지정한다. (fixed 또는 absolute는 전체 노드에서 분리되어 전체 노드에 Reflow 비용을 줄일 수 있음)
+- 테이블 레이아웃은 점진적으로 그려지지 않고 레아이웃이 계산된 후에 화면에 그려진다. (하지만 성능상으로 table-layout:fixed이 디폴트인 auto보다 좋음)
+- CSS 하위 선택자는 적은게 좋다. (parsing 시 비용이 절감됨)
+- position: relative 사용 시 주의가 필요 (margin, border, padding, width, height 등 Box model을 계산 후 레이아웃을 배치한다.)
+- cssText 적극 활용 및 그룹화 처리
+
+<br/>
+
+### DOM 조작의 비효율성
+
+- **위와 같이 Replow 즉, `DOM에 관련된 조작들이 새로 변경`되게 되면 변경된 사항으로 안해 `모든 값들이 새로 Refow되어 Repaint되는 현상`으로 인해 `Virtual DOM(가상돔)이 생기게 되었다.`**
 
 <br/>
 
@@ -109,6 +142,8 @@ categories: 개발지식
 [[웹] 웹 브라우저에 url을 쳤을 때 어떤 일이 일어날까? (웹 브라우저 요청 흐름)](https://velog.io/@sewonkim/%EC%9B%B9-%EC%9B%B9-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%97%90-url%EC%9D%84-%EC%B3%A4%EC%9D%84-%EB%95%8C-%EC%96%B4%EB%96%A4-%EC%9D%BC%EC%9D%B4-%EC%9D%BC%EC%96%B4%EB%82%A0%EA%B9%8C-%EC%9B%B9-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EC%9A%94%EC%B2%AD-%ED%9D%90%EB%A6%84)
 
 [브라우저의 렌더링 과정](https://velog.io/@younoah/browser-rendering-path#%EB%A0%8C%EB%8D%94%EB%A7%81-%EC%84%B1%EB%8A%A5-%EA%B0%9C%EC%84%A0%ED%95%98%EA%B8%B0)
+
+[Browser의 기본 구조 및 동작 과정](https://minemanemo.tistory.com/121)
 
 <br/>
 
