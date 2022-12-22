@@ -160,6 +160,11 @@
 <li>cssText 적극 활용 및 그룹화 처리</li>
 </ul>
 <br/>
+<h3 id="dom-조작의-비효율성" style="position:relative;"><a href="#dom-%EC%A1%B0%EC%9E%91%EC%9D%98-%EB%B9%84%ED%9A%A8%EC%9C%A8%EC%84%B1" aria-label="dom 조작의 비효율성 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>DOM 조작의 비효율성</h3>
+<ul>
+<li><strong>위와 같이 Replow 즉, <code class="language-text">DOM에 관련된 조작들이 새로 변경</code>되게 되면 변경된 사항으로 안해 <code class="language-text">모든 값들이 새로 Refow되어 Repaint되는 현상</code>으로 인해 <code class="language-text">Virtual DOM(가상돔)이 생기게 되었다.</code></strong></li>
+</ul>
+<br/>
 <h2 id="용어사전" style="position:relative;"><a href="#%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84" aria-label="용어사전 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>용어사전</h2>
 <ol>
 <li>사용자 인터페이스 - 주소 표시줄, 이전/다음 버튼, 북마크 메뉴 등 페이지 뷰 이외의 다른 모든 부분</li>
@@ -207,6 +212,7 @@
 <li><a href="#%EB%A0%8C%EB%8D%94%EB%A7%81-%EB%8F%99%EC%9E%91-%EA%B3%BC%EC%A0%95">렌더링 동작 과정</a></li>
 <li><a href="#replow%EC%99%80-repaint">Replow와 Repaint</a></li>
 <li><a href="#%EC%95%8C%EC%95%84%EB%91%90%EB%A9%B4-%EC%A2%8B%EC%9D%80-%EC%82%AC%ED%95%AD">알아두면 좋은 사항</a></li>
+<li><a href="#dom-%EC%A1%B0%EC%9E%91%EC%9D%98-%EB%B9%84%ED%9A%A8%EC%9C%A8%EC%84%B1">DOM 조작의 비효율성</a></li>
 </ul>
 </li>
 <li>
