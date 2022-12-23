@@ -154,8 +154,8 @@
 <li>화면에 렌더링이 완료된 후에 수행되며, componentDidMount와 componentDidUpdate, componentWillUnmount가 합쳐진 것으로</li>
 <li>Hook를 이용하여 Life Cycle을 설명할 수 있는 대표적인 Hooks이다.</li>
 <li>useEffect안에서의 return은 비동기 관련 로직을 정리하기 위에 clean-up를 사용하기위해 쓰여진다.</li>
-<li>메모리 누수 방지를 위해 UI에서 컴포넌트를 제거하기 전에 수행</li>
-<li>컴포넌트가 여러 번 렌더링 된다면 다음 effect가 수행되기 전에 이전 effect가 정리됩니다.</li>
+<li>메모리 누수 방지를 위해 UI에서 컴포넌트를 제거하기 전에 수행한다.</li>
+<li>컴포넌트가 여러 번 렌더링 된다면 다음 effect가 수행되기 전에 이전 effect가 정리된다.</li>
 </ul>
 <div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 렌더링 결과가 실제 돔에 반영된 후마다 호출</span>
 <span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 컴포넌트가 처음 나타날때 한 번 호출</span>
