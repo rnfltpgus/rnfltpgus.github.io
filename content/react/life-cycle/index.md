@@ -6,6 +6,9 @@ author: JungSany
 tags: blog gatsby JungLog log jung life cycle react 생명주기 수명 class function hooks
 categories: React
 ---
+# 🤯 보완예정
+
+<br/>
 
 # Life Cycle이란?
 
@@ -25,18 +28,6 @@ categories: React
 
 - `will` 접두사 메소드 → 어떤 작업을 **작동하기 전**에 실행
 - `Did` 접두사 메소드 → 어떤 작업을 **작동한 후**에 실행
-
-<br/>
-
-## Life Cycle에 대한 클래스∙함수 컴포넌트 비교
-
-| **분류**   | **클래스형 컴포넌트**  | **함수형 컴포넌트**  |
-| ---------- | ---------------------- | -------------------- |
-| Mounting   | constructor()          | 함수형 컴포넌트 내부 |
-| Mounting   | render()               | return()             |
-| Mounting   | ComponenDidMount()     | useEffect()          |
-| Updating   | componentDidUpdate()   | useEffect()          |
-| UnMounting | componentWillUnmount() | useEffect()          |
 
 <br/>
 
@@ -73,9 +64,9 @@ categories: React
 
 ![함수형 컴포넌트 Life Cycle](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbF6rTe%2FbtrEvNPPvFs%2FkfuXlK3dGF4bJUpKXQcjH1%2Fimg.png)
 
-### Mount∙Update∙Unmount을 useEffect로
+**함수 컴포넌트의 생명주기는** 컴포넌트가 호출이 되면 컴포넌트 내부에서 `return`을 통해 화면을 렌더링하고, 그 후 useEffect가 실행되는데, `useEffect()`를 통해서 `상태의 변경∙컴포넌트의 소멸 등`의 이벤트를 관리할 수 있다.
 
-- 하나의 컴포넌트 내에서 한개 or 여러개를 선언할 수 있다.
+한개의 컴포넌트 내에서 한개 or 여러개를 선언하여 관리할 수 있다.
 
 ```jsx
 useEffect(() => {}); // 렌더링 결과가 실제 돔에 반영될때 마다 호출
@@ -83,7 +74,21 @@ useEffect(() => {}, []); // 컴포넌트가 처음 나타날때 한 번 호출
 useEffect(() => {}, [dependencies1, dependencies2, ...]); // 조건부 effect 발생, 의존성 중 하나가 변경된다면, 리렌더링이 일어난다.
 ```
 
-#### [Hooks에 관한 내글](https://rnfltpgus.github.io/react/hooks-use/)
+<br/>
+
+## Life Cycle에 대한 클래스∙함수 컴포넌트 비교
+
+| **분류**   | **클래스형 컴포넌트**  | **함수형 컴포넌트**  |
+| ---------- | ---------------------- | -------------------- |
+| Mounting   | constructor()          | 함수형 컴포넌트 내부 |
+| Mounting   | render()               | return()             |
+| Mounting   | componentDidMount()    | useEffect()          |
+| Updating   | componentDidUpdate()   | useEffect()          |
+| UnMounting | componentWillUnmount() | useEffect()          |
+
+<br/>
+
+#### [Hooks 종류에 대해서](https://rnfltpgus.github.io/react/hooks-use/)
 
 <br/>
 

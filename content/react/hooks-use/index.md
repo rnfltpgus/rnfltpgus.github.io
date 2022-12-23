@@ -7,7 +7,7 @@ tags: blog gatsby JungLog log jung life cycle react hooks
 categories: React
 ---
 
-## Hooks이 나온 이유
+## Hooks가 등장한 이유
 
 - 기존의 클래스 문법에서 사용하였던 라이프사이클 메서드 기반은 `관련 없는 로직이 섞여 코드가 작성되는 경우가 있었고 그로 인해서 버그가 쉽게 발생하고, 무결성을 해치는 경우가 많았다.` 때문에 `로직 기반으로` 나눌 수 있고 컴포넌트를 함수 단위로 잘게 쪼갤 수 있는 `React Hooks`가 나와 함수 컴포넌트로 작성하게 되었다.
 
@@ -16,6 +16,8 @@ categories: React
 - 이 규칙을 따르면 컴포넌트가 렌더링될 때마다 동일한 순서로 호출되는 것을 보장할 수 있다.
 
 <br/>
+
+## Hooks의 종류
 
 ### useState
 
