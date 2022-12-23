@@ -1,0 +1,74 @@
+---
+emoji: 🏥
+title: 컴포넌트의 생명주기(Life Cycle)
+date: '2022-12-23 14:50:00'
+author: JungSany
+tags: blog gatsby JungLog log jung life cycle react 생명주기 수명
+categories: React
+---
+
+![리엑트 라이프사이클 도표](https://cdn.filestackcontent.com/ApNH7030SAG1wAycdj3H)
+
+## Life Cycle이란?
+
+- `컴포넌트의 수명`은 페이지에 렌더링 되기 전인 **준비과정**에서 시작하여, **브라우저에 렌더링 및 업데이트** 후 페이지에서 **사라질 때** 끝난다.
+- 컴포넌트는 `생성(mountion) → 업데이트(updating) → 제거(unmountion)의 생명주기`를 같는다.
+- **클래스 컴포넌트**는 라이플 사이클 메서드를 사용하고, **함수형 컴포넌트**는 Hook을 사용한다.
+
+- 컴포넌트가 처음 렌더링 될 때, 어떤 작업을 처리해야하거나 컴포넌트를 업데이트하기 전후로 어떤 작업을 처리해야 할 수 도 있고, 불필요한 업데이트를 방지해야 할 수도 있다. 이러한 경우에 컴포넌트 **라이프사이클 메소드를 사용**한다.
+
+  (라이프사이클 메소드는 **클래스 컴포넌트에서만 사용**. 함수형 컴포넌트 → Hooks 사용)
+
+<br/>
+
+## Life Cycle의 구성
+
+- 라이프 사이클은 총 3가지 카테고리로 구성 - **Mount**, **Update**, **Unmount**
+
+- **라이프 사이클 메소드는 총 9가지다.**
+
+- `will` 접두사 메소드 → 어떤 작업을 **작동하기 전**에 실행
+- `Did` 접두사 메소드 → 어떤 작업을 **작동한 후**에 실행
+
+<br/>
+
+1. **Mount**
+
+- constructor : 컴포넌트의 생성자 메소드. `컴포넌트가 만들어지면 가장 먼저 실행`됨.
+- getDerivedStateFromProps : `props로 받아온 것을 state에 넣어주고 싶을 때 사용`.
+- render : `컴포넌트를 렌더링하는 메소드`
+- componentDidMount : `컴포넌트의 첫번째 렌더링이 끝나면 호출되는 메소드`. 이 메소드가 호출되는 시점에서 우리가 만든 컴포넌트가 화면에 나타난 상태. (여기서 주로 D3, masonry 처럼 DOM을 사용해야하는 외부 라이브러리 연동을 하거나, 해당 컴포넌트에서 필요로하는 데이터를 요청하기 위해 axios, fetch 등을 이용하여 ajax 요청을 하거나, DOM의 속성을 읽거나 직접 변경하는 작업을 진행)
+
+<br/>
+
+2. **Update**
+
+- getDerivedStateFromProps : `컴포넌트의 props나 state가 바뀌었을때도 이 메소드가 호출`됨.
+- ShouldComponenetUpdate : `컴포넌트가 리렌더링 할지 말지를 결정`
+- render : mount와 상동
+- getSnapshotBeforeUpdate : 컴포넌트에 변화가 일어나기 직전의 DOM 상태를 가져와서 특정 값을 반환하면, 그 다음 발생하게 되는 componentDidUpdate 함수에서 받아와서 사용할 수 있음.
+- componentDidUpdate : `리렌더링을 마치고, 화면에 우리가 원하는 변화가 모드 반영되고 난 뒤 호출되는 메소드`. 3번째 파라미터로 getSnapshotBeforeUpdate에서 반환 값 조회 가능.
+
+<br/>
+
+3. **Unmount**
+
+- componentWillUnmount : `컴포넌트가 화면에서 사라지기 직전에 호출`
+
+<br/>
+
+### 참고링크
+
+[React.Component - React](https://ko.reactjs.org/docs/react-component.html)
+
+[React Lifecycle Methods diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
+
+[[React.js] 리액트 라이프사이클(life cycle) 순서, 역할, Hook](https://velog.io/@minbr0ther/React.js-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4life-cycle-%EC%88%9C%EC%84%9C-%EC%97%AD%ED%95%A0)
+
+[[React] 컴포넌트 생명주기 메서드](https://velog.io/@youngminss/React-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0-%EB%A9%94%EC%84%9C%EB%93%9C)
+
+<br/>
+
+```toc
+
+```
