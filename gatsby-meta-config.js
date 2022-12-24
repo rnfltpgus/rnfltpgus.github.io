@@ -84,7 +84,7 @@ module.exports = {
       {
         title: 'Poke Poke Coching',
         description:
-          '현재 저의 상황처럼 앉아서 공부하는 시간이 많은 또는 업무를 하는 사람들을 위한 서비스입니다. 앉아서 자세의 흐트러짐, 시간체크, 스트레칭 모드를 이용할 수 있습니다.',
+          '현재 저의 상황처럼 앉아서 공부하는 시간이 많은 또는 업무를 하는 사람들을 위한 서비스입니다. 앉아서 자세의 흐트러짐, 시간체크, 스트레칭 모드를 이용할 수 있습니다. (크롬 브러우저 전체화면 툴바 없이 동작 시켜야 최적의 환경에서 사용할 수 있습니다.)',
         techStack: ['Tensorflow', 'postNet', 'React', 'RearTime'],
         thumbnailUrl: 'pokepokecoching.png',
         links: {
@@ -94,7 +94,8 @@ module.exports = {
       },
       {
         title: 'Auxios',
-        description: '서울 내의 법원경매 정보를 검색, 확인할 수 있는 웹뷰 기반 앱입니다.',
+        description:
+          '서울 내의 법원경매 정보를 검색, 확인할 수 있는 웹뷰 기반 앱입니다. 사용자는 검색을 통해서 해당 지역의 본인이 원하는 종류의 매물을 지도 위 마커로 확인할 수 있고, 관심 지역과 관심 매물을 등록 확인할 수 있습니다.',
         techStack: ['React', ' React Native Webview', 'Firebase', 'Kakao Map API', 'Selenium'],
         links: {
           github: 'https://github.com/VanillaAuxious',
