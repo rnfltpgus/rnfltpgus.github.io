@@ -10,7 +10,7 @@ function ThemeSwitch() {
 
   useEffect(() => {
     setValueToLocalStorage('isDarkMode', isDarkMode);
-    document.documentElement.setAttribute('data-theme', isDarkMode ? 'light' : 'dark');
+    document.documentElement.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
   }, [isDarkMode]);
 
   return (
