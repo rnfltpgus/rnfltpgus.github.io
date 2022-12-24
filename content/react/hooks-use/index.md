@@ -70,6 +70,7 @@ const refContainer = useRef(null);
 - 이미 연산 된 값을 리렌더링 시 다시 계산하지 않도록 한다.
 - 의존성이 변경되었을 때에만 메모이제이션된 값만 다시 계산한다.
 - 의존성 배열이 없는 경우 매 렌더링 때마다 새 값을 계산한다.
+- **유의사항:** 모든 컴포넌트를 useMemo로 감싸게 되면 이 또한 리소스 낭비이므로, 퍼포먼스 최적화가 필요한 연상량이 많은 곳에 사용하는 것이 좋다.
 
 ```jsx
 const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);

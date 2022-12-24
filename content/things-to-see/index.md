@@ -27,6 +27,8 @@ categories: 앞으로만
 
 [WebRTC 응용 서비스를 개발하는 2가지 방법](https://tech.kakaoenterprise.com/121)
 
+[패턴에 대해서 공부한다면](https://www.patterns.dev/posts/)
+
 <br/>
 
 ```toc
