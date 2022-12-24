@@ -19,7 +19,7 @@ categories: 개발지식
 
 ## RESTful을 알아가기 전 알아두어야 할 **REST**란?
 
-**`HTTP URI`를 통해 자원을 명시하고, `HTTP Method(POST, GET, PUT, DELETE)`를 통해 해당 자원에 대한 CRUD OPERATION을 적용하는 것을 의미한다.**
+**`HTTP URI`를 통해 자원을 명시하고, [HTTP Method(POST, GET, PUT, DELETE)](https://rnfltpgus.github.io/knowledge/http-method/)를 통해 해당 자원에 대한 CRUD OPERATION을 적용하는 것을 의미한다.**
 
 **즉, `REST`는 `자원 기반의 구조(ROA: Resource Oriented Architecture) 설계의 중심`에 Resource가 있고 `HTTP Method`를 통해
 Resource를 처리하도록 설계된 `아키텍쳐`를 의미한다.**
@@ -37,7 +37,7 @@ Resource를 처리하도록 설계된 `아키텍쳐`를 의미한다.**
 
 **2. 행위 (Verb) - Http Method**
 
-- HTTP 프로토콜의 Method를 사용한다.
+- HTTP 프로토콜의 `Method`를 사용한다.
 - HTTP 프로토콜은 GET, POST, PUT, DELETE와 같은 메서드를 제공한다.
 
 **3. 표현 (Representation of Resource)**
@@ -158,7 +158,7 @@ API 설계에 영향을 주지 않고 다양한 프로그래밍 언어로 클라
 
 **REST(Representational State Transfer)**: API 작동 방식에 대한 조건을 부과하는 소프트웨어 아키텍처 -> `REST API`와 `RESTful API`는 같은 의미로 사용할 수 있다.
 
-**CRUD Operation**: CRUD는 대부분의 컴퓨터 소프트웨어가 가지는 기본적인 데이터 처리 기능인 Create(생성), Read(읽기), Update(갱신), Delete(삭제)를 묶어서 일컫는 말로 REST에서의 CRUD Operation 동작 예시는 다음과 같다.
+**CRUD Operation**: CRUD는 대부분의 컴퓨터 소프트웨어가 가지는 기본적인 데이터 처리 기능인 Create(생성), Read(읽기), Update(갱신), Delete(삭제)를 묶어서 일컫는 말로 REST에서의 CRUD Operation 동작 예시는 다음과 같다. [Http Method에 대해서](https://rnfltpgus.github.io/knowledge/http-method/)
 
 - Create : 데이터 생성(POST)
 - Read : 데이터 조회(GET)
@@ -179,6 +179,10 @@ API 설계에 영향을 주지 않고 다양한 프로그래밍 언어로 클라
 [RESTful API란 무엇입니까?](https://aws.amazon.com/ko/what-is/restful-api/)
 
 [Day1, 2-2. 그런 REST API로 괜찮은가](https://www.youtube.com/watch?v=RP_f5dMoHFc)
+
+[[Network] REST란? REST API란? RESTful이란?](https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html)
+
+[RESTful Api란](https://velog.io/@gomuzom/RESTful-Api)
 
 <br/>
 
