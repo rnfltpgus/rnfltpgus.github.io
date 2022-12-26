@@ -9,9 +9,11 @@ categories: 개발지식 JavaScript
 
 ![EventLoop 이미지](https://miro.medium.com/max/2048/1*4lHHyfEhVB0LnQ3HlhSs8g.png)
 
-`JS 엔진`은 **Memory Heap / Call Stack / Task Queue**로 구성되어 있으며, JS로 작성된 코드를 해석하고 실행하는 **인터프리터(프로그래밍 언어의 소스 코드를 바로 샐행하는 컴퓨터 프로그램 또는 환경)**다. JS는 단일 스레드(single thread)인데 즉, Call Stack이 한 개(single)라는 뜻이다.
+**`JS 엔진`은 Memory Heap / Call Stack로 구성되어 있으며, JS로 작성된 코드를 해석하고 실행하는 인터프리터(프로그래밍 언어의 소스 코드를 바로 샐행하는 컴퓨터 프로그램 또는 환경)다.**
 
-(\* 가장 유명한 `JS 엔진`으로는 구글의 V8 Engine이 있다)
+**JS는 단일 스레드(single thread)인데 즉, Call Stack이 한 개(single)라는 뜻이다.**
+
+**(가장 유명한 `JS 엔진`으로는 구글의 V8 Engine이 있다)**
 
 <br/>
 

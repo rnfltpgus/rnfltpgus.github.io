@@ -44,7 +44,7 @@ categories: 개발지식 최적화
 
 ### 용어정리
 
-[**PNG와 SVG**](https://rnfltpgus.github.io/png-svg)
+[**PNG와 SVG**](https://rnfltpgus.github.io/knowledge/png-svg/)
 
 <br/>
 
