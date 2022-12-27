@@ -3,11 +3,25 @@ emoji: 🍄
 title: 자료구조(Data Structure)란? 그리고 종류
 date: '2022-12-27 13:10:00'
 author: JungSany
-tags: blog gatsby JungLog log jung javascript data structure
+tags: blog gatsby JungLog log jung javascript data structure Array Tuple LinkedList Hash Tables Stack Queue Deque Graph Tree
 categories: JavaScript 데이터
 ---
 
 **면접을 준비하면서 최근 면접때는 자료구조에 대해서 잘 나오지 않아 생각을 못하고 있었는데, 어제 면접에서 자료구조에 대해서와 장단점 비교에 대한 질문들이 나오게 되었고 나는 당황했다. 그래서 준비가 미비했던걸 인정하고 한번 정리해 보아야겠다. 블로그로 적으면 그래도 한번은 면접때 쭉 볼수 있으니까 말이다.**
+
+<br/>
+
+## 시간 복잡도에서 대해서 잠깐 알고 아래글을 읽자
+
+아래 글을 읽으면서 시간 복잡도라는 것을 작성했는데, **`시간복잡도란 무엇일까?`**
+
+**알고리즘의 로직을 코드로 구현할 때 보통 많이 볼 수 있는데, 시간 복잡도를 고려한다는 말은 ‘입력값의 변화에 따라 연산을 실행할 때, 연산 횟수에 비해 시간이 얼마만큼 걸리는가?’라는 말이다.**
+
+효율적인 알고리즘을 구현한다는 것은 시간복잡도를 고려한다는 말이고 다시 말하면 `입력값이 커짐에 따라 증가하는 시간의 비율을 최소화한 알고리즘을 구성했다`는 이야기이다.
+
+시간 복잡도는 보통 **`Big-O 표기법`** 으로 나타낸다.
+
+**[Big-O 표기법](https://www.bigocheatsheet.com/)은 `입력값의 변화에 따라 연산을 실행할 때, 연산 횟수에 비해 시간이 얼마만큼 걸리는가?`를 표기하는 방법이다.**
 
 <br/>
 
@@ -214,6 +228,8 @@ categories: JavaScript 데이터
 
 [adrianmejia](https://adrianmejia.com/)
 
+[[알고리즘] Time Complexity (시간 복잡도)](https://hanamon.kr/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-time-complexity-%EC%8B%9C%EA%B0%84-%EB%B3%B5%EC%9E%A1%EB%8F%84/)
+
 [[Data structure] 개발자라면 꼭 알아야 할 7가지 자료구조](https://velog.io/@jha0402/Data-structure-%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%9D%BC%EB%A9%B4-%EA%BC%AD-%EC%95%8C%EC%95%84%EC%95%BC-%ED%95%A0-7%EA%B0%80%EC%A7%80-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0)
 
 [[자료구조] 대표적인 자료구조 정리](https://re-code-cord.tistory.com/entry/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%EB%8C%80%ED%91%9C%EC%A0%81%EC%9D%B8-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%EC%A0%95%EB%A6%AC)
@@ -221,6 +237,9 @@ categories: JavaScript 데이터
 [[Python] 자료형4- 튜플형](https://blog.naver.com/PostView.nhn?blogId=soj12345&logNo=221373403400&parentCategoryNo=&categoryNo=14&viewDate=&isShowPopularPosts=false&from=postView)
 
 [[자료구조] 덱 (Deque)](https://suyeon96.tistory.com/24)
+
+[[알고리즘] Time Complexity (시간 복잡도)](https://hanamon.kr/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-time-complexity-%EC%8B%9C%EA%B0%84-%EB%B3%B5%EC%9E%A1%EB%8F%84/)
+
 <br/>
 
 ```toc

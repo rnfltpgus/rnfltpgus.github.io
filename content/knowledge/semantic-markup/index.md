@@ -15,7 +15,9 @@ categories: 개발지식
 
 **의미를 잘 전달하도록 문서를 작성하는 것을 말함**
 
-![시멘틱 마크업 예시](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f4680876-ea14-49f8-ac11-c202d69796c0/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-08-04_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_1.02.49.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221223%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221223T121440Z&X-Amz-Expires=86400&X-Amz-Signature=7f75d84706ebc7f89b2787d2f7889c1541c3a18abeef44562fee318fc9a4e644&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA%25202022-08-04%2520%25E1%2584%258B%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25AB%25201.02.49.png%22&x-id=GetObject)
+![시멘틱 마크업 예시 - 1](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbI9UPv%2Fbtrc8hXFHt1%2FVBEgspsee8UWIQMqJTZEJ1%2Fimg.png)
+
+![시멘틱 마크업 예시 - 2](https://blog.kakaocdn.net/dn/qpLEl/btrdffRp9SN/E9Z5l2D9U0IaI6uMxTlJ9k/img.png)
 
 <br/>
 

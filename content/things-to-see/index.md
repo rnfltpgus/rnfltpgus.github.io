@@ -29,6 +29,8 @@ categories: 앞으로만
 
 [패턴에 대해서 공부한다면](https://www.patterns.dev/posts/)
 
+[Tech Interview for developer](https://gyoogle.dev/blog/)
+
 <br/>
 
 ```toc
