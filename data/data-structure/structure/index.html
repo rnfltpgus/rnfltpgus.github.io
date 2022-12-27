@@ -139,6 +139,19 @@
 <ul>
 <li>개체가 해시값에 따라 인덱싱된다.</li>
 <li>대량의 정보를 저장하고 특정 요소를 효율적으로 검색할 수 있는 복잡한 데이터 구조다.</li>
+<li><strong><code class="language-text">해시 테이블을 구현하기 위해서는</code> 연결 리스트(LinkedList)와 해시 함수(Hash FUnction)이 필요하다.</strong></li>
+<li><code class="language-text">특정한 키(key)</code>에 대해서 해시 함수 또는 해시 알고리즘을 통해 <code class="language-text">일정한 길이의 해시(hash)</code>를 만들어내고, <code class="language-text">버킷(bucket)</code>에 저장한다. 이후에 같은 키에 대해서 같은 해시를 만들어내고, <strong>해시를 통해 해당 값(value)을 조회</strong>할 수 있다.</li>
+<li><code class="language-text">해싱(Hashing)</code>은 <strong>해시 함수를 통해서 임의의 값을 고정된 크기의 값으로 변환하는 작업</strong>을 말하는데, 키 값을 입력받아서 해시 함수를 통해 얻은 해시(Hash)를 배열의 인덱스로 환산해서 값에 접근하는 것을 의미한다.</li>
+<li>하지만 <strong>입력된 키의 해시 값이 이미 데이터가 저장된 버킷을 가리키어 <code class="language-text">해시 충돌</code>이 일어날 수 있는데</strong>, 해시 충돌은 <code class="language-text">자료구조나 알고리즘의 효율성을 떨어지기</code> 때문에 <strong>해시 함수는 해시 충돌이 자주 발생하지 않도록 구성</strong>되어야 한다.</li>
+</ul>
+<h4 id="충돌-해결-방법" style="position:relative;"><a href="#%EC%B6%A9%EB%8F%8C-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95" aria-label="충돌 해결 방법 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>충돌 해결 방법</h4>
+<ul>
+<li><strong>분리 연결볍(Separate Chaining)</strong> : Linked List 혹은 Tree를 사용하는 방법이다. 충돌이 발생하는 경우 인덱스가 가리키고 있는 값에 노드를 추가하여 값을 추가한다. 대신, 두 방법 모두 많이 추가하면 비효율적이다.</li>
+<li><strong>개방 주소법(Open Addressing)</strong> : 해시 테이블의 빈공간을 사용하는 방법이다. 추가적인 메모리 공간을 필요하지 않은 장점이 있다. 그 방법에는 Linear Probing, Quadratic Probing, Double Hashing 등이 있다.</li>
+</ul>
+<h4 id="시간-복잡도-2" style="position:relative;"><a href="#%EC%8B%9C%EA%B0%84-%EB%B3%B5%EC%9E%A1%EB%8F%84-2" aria-label="시간 복잡도 2 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>시간 복잡도</h4>
+<ul>
+<li>키 값을 배열의 인덱스로 사용하기 때문에, 값을 직접 접근할 수 있다. 따라서, 해시 테이블의 평균 시간 복잡도는 <code class="language-text">O(1)</code>이다.(충돌(Collision)이 일어나는 경우 <code class="language-text">O(n)</code>)</li>
 </ul>
 <br/>
 <h2 id="형태에-따라" style="position:relative;"><a href="#%ED%98%95%ED%83%9C%EC%97%90-%EB%94%B0%EB%9D%BC" aria-label="형태에 따라 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>형태에 따라</h2>
@@ -195,6 +208,7 @@
 <h2 id="참고링크" style="position:relative;"><a href="#%EC%B0%B8%EA%B3%A0%EB%A7%81%ED%81%AC" aria-label="참고링크 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>참고링크</h2>
 <p><a href="https://visualgo.net/en">VISUALGO.net</a></p>
 <p><a href="https://ko.wikipedia.org/wiki/%EC%9E%90%EB%A3%8C_%EA%B5%AC%EC%A1%B0">위키백과 - 자료 구조</a></p>
+<p><a href="https://ko.wikipedia.org/wiki/%ED%95%B4%EC%8B%9C_%EC%B6%A9%EB%8F%8C">해시 충돌</a></p>
 <p><a href="https://velog.io/@jha0402/Data-structure-%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%9D%BC%EB%A9%B4-%EA%BC%AD-%EC%95%8C%EC%95%84%EC%95%BC-%ED%95%A0-7%EA%B0%80%EC%A7%80-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0">[Data structure] 개발자라면 꼭 알아야 할 7가지 자료구조</a></p>
 <p><a href="https://re-code-cord.tistory.com/entry/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%EB%8C%80%ED%91%9C%EC%A0%81%EC%9D%B8-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%EC%A0%95%EB%A6%AC">[자료구조] 대표적인 자료구조 정리</a></p>
 <p><a href="https://blog.naver.com/PostView.nhn?blogId=soj12345&#x26;logNo=221373403400&#x26;parentCategoryNo=&#x26;categoryNo=14&#x26;viewDate=&#x26;isShowPopularPosts=false&#x26;from=postView">[Python] 자료형4- 튜플형</a></p>
@@ -225,6 +239,10 @@
 </li>
 <li>
 <p><a href="#%ED%95%B4%EC%8B%9C-%ED%85%8C%EC%9D%B4%EB%B8%94-hash-tables--hash-map">해시 테이블 (Hash tables / Hash map)</a></p>
+<ul>
+<li><a href="#%EC%B6%A9%EB%8F%8C-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95">충돌 해결 방법</a></li>
+<li><a href="#%EC%8B%9C%EA%B0%84-%EB%B3%B5%EC%9E%A1%EB%8F%84-2">시간 복잡도</a></li>
+</ul>
 </li>
 </ul>
 </li>
