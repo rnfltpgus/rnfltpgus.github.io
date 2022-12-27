@@ -1,5 +1,5 @@
 ---
-emoji: 🍈
+emoji: 🍑
 title: Array와 JavaScript의 Array
 date: '2022-12-26 17:37:00'
 author: JungSany
@@ -80,7 +80,7 @@ console.log(arr.length); // 6
 console.log(arr); // [ 1, 2, 3, <3 empty items> ]
 ```
 
-위 코드에서 출력 결과를 확인해 보았을 때, `arr 변수`에 선언된 length 프로퍼티의 값보다 큰 숫자의 length를 할당하게 되면 length의 길이는 변경되지만, 실제 `arr 변수`에는 아무런 변화가 없기 때문에 `3 empty items`는 console.log에 찍히게 되는 것을 확인 할 수 있다.
+위 코드에서 출력 결과를 확인해 보았을 때, `arr 변수`에 선언된 length 프로퍼티의 값보다 큰 숫자의 length를 할당하게 되면 length의 길이는 변경되지만, 실제 `arr 변수`에는 아무런 변화가 없기 때문에 `3 empty items`라는 console.log에 찍히게 되는 것을 확인 할 수 있다.
 
 ```javascript
 console.log(Object.getOwnPropertyDescriptors(arr));
@@ -114,6 +114,8 @@ console.log(Object.getOwnPropertyDescriptors(arr));
 ### 자바스크립트의 배열과 객체 비교
 
 `자바스크리브의 배열은` 인덱스로 배열 요소에 접근할 때 일반적인 배열보다 느릴 수 밖에 없는 구조적인 단점을 보완하기 위해 `배열을 일반 객체와 구별하여 보다 배열처럼 동작하도록 최적화하여 구현`하였다.
+
+아래는 모던자바스크립트 예제를 가져왔다.
 
 ```javascript
 const arr = [];
