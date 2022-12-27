@@ -118,9 +118,9 @@
 <li>새로운 요소가 추가될 때 런타임에 메모리를 할당한다.(동적 메모리 할당)</li>
 <li>연결 리스트는 아래와 같이 목적 방식에 따라 구현할 수 있다.
 <ul>
-<li>원형 연결 리스트 : 각 노드는 다음 노드를 가리키고, 마지막 노드가 처음 노드를 가리키는 연결 리스트이다.</li>
-<li>이중 연결 리스트 : 각 노드는 이전 노드와 다음 노드를 가리키는 참조값으로 구성된다. 처음 노드의 이전 노드와 마지막 노드의 다음 노드는 없다.</li>
-<li>환형 이중 연결 리스트 : 처음 노드가 이전 노드로 마지막 노드를 가리키고, 마지막 노드가 다음 노드로 처음 노드를 가리키는 이중 연결 리스트이다.</li>
+<li><strong>원형 연결 리스트</strong> : 각 노드는 다음 노드를 가리키고, 마지막 노드가 처음 노드를 가리키는 연결 리스트이다.</li>
+<li><strong>이중 연결 리스트</strong> : 각 노드는 이전 노드와 다음 노드를 가리키는 참조값으로 구성된다. 처음 노드의 이전 노드와 마지막 노드의 다음 노드는 없다.</li>
+<li><strong>환형 이중 연결 리스트</strong> : 처음 노드가 이전 노드로 마지막 노드를 가리키고, 마지막 노드가 다음 노드로 처음 노드를 가리키는 이중 연결 리스트이다.</li>
 </ul>
 </li>
 </ul>
@@ -171,15 +171,9 @@
 <h4 id="큐queue" style="position:relative;"><a href="#%ED%81%90queue" aria-label="큐queue permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>큐(Queue)</h4>
 <p><img src="https://cdn.programiz.com/sites/tutorial2program/files/queue.png" alt="Queue 이미지"></p>
 <ul>
-<li>
-<p><strong>스택과 반대로 큐 자료구조는 <code class="language-text">선입선출 방식</code>으로 먼저 저장된 것이 제일 먼저 나온다.(FIFO(First In First Out) 메커니즘) 반대로, 가장 나중에 저장된 것이 꺼내어 쓸 때는 가장 나중에 나온다.</strong></p>
-</li>
-<li>
-<p>동적 메모리 방식을 취한다.</p>
-</li>
-<li>
-<p>환형 큐 : 한정된 길이 안에서 부수적인 작업 없이 읽고 쓰기를 할 수 있는 큐이다.</p>
-</li>
+<li><strong>스택과 반대로 큐 자료구조는 <code class="language-text">선입선출 방식</code>으로 먼저 저장된 것이 제일 먼저 나온다.(FIFO(First In First Out) 메커니즘) 반대로, 가장 나중에 저장된 것이 꺼내어 쓸 때는 가장 나중에 나온다.</strong></li>
+<li>동적 메모리 방식을 취한다.</li>
+<li>환형 큐 : 한정된 길이 안에서 부수적인 작업 없이 읽고 쓰기를 할 수 있는 큐이다.</li>
 </ul>
 <h4 id="시간-복잡도-4" style="position:relative;"><a href="#%EC%8B%9C%EA%B0%84-%EB%B3%B5%EC%9E%A1%EB%8F%84-4" aria-label="시간 복잡도 4 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>시간 복잡도</h4>
 <ul>
@@ -196,41 +190,58 @@
 <br/>
 <h3 id="비선형-구조" style="position:relative;"><a href="#%EB%B9%84%EC%84%A0%ED%98%95-%EA%B5%AC%EC%A1%B0" aria-label="비선형 구조 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>비선형 구조</h3>
 <h4 id="그래프graph" style="position:relative;"><a href="#%EA%B7%B8%EB%9E%98%ED%94%84graph" aria-label="그래프graph permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>그래프(Graph)</h4>
+<p><img src="https://blog.kakaocdn.net/dn/dLxFmq/btqzt3V6A8w/mIsOTwkyY4dZZI8btUS7q0/img.jpg" alt="Graph 이미지"></p>
 <ul>
 <li>
-<p><strong><code class="language-text">객체 간의 연결</code>을 시각화한 것으로 <code class="language-text">정점(Vertex)간의 관계</code>를 표현하는 자료구조</strong>로 꼭짓점과 꼭짓점을 잇는 변으로 구성된다.</p>
+<p><strong><code class="language-text">객체 간의 연결(Edge)</code>을 시각화한 것으로 <code class="language-text">정점(Vertex)간의 관계</code>를 표현하는 자료구조</strong>로 꼭짓점과 꼭짓점을 잇는 단순한 형태의 자료구이다.</p>
 </li>
 <li>
-<p><strong>그래프는 변이 방향성을 갖는지 갖지 않는지에 따른 그래프를 분류할 수 있는데, 방향이 있다면(Directed) 없다면(Undirected)</strong></p>
+<p><strong>그래프는 변이 방향성을 가지는 가, 안가지는 가에 따라서 그래프를 분류할 수 있는데, 방향성이 있다면(Directed) 없다면(Undirected)</strong></p>
+</li>
+<li>
+<p>새로운 요소들의 추가/삭제가 용이하고 효율적이다.</p>
+</li>
+<li>
+<p>그래프 역시 입력된 키의 해시값이 이미 데이터가 저장된 버킷을 가르킬 수 있기 때문에 <code class="language-text">충돌이 일어날 수 있다.</code></p>
 <p><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&#x26;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fnl3ll%2Fbtq45OhCWXh%2FOQsbfvkUBp9tKX0H2syWGK%2Fimg.png" alt="Directed와 Undirected 그래프 이미지"></p>
 </li>
 <li>
-<p><strong>유향 그래프(Directed)</strong>: 변의 방향은 보통 부모를 가리키도록 구현된다.</p>
+<p><strong>유향 그래프(Directed)</strong> : 변의 방향은 보통 부모를 가리키도록 구현된다.</p>
 </li>
 <li>
-<p><strong>무향 그래프(Undirected)</strong>: 순환이 없는 연결 그래프로 구현된다.</p>
+<p><strong>무향 그래프(Undirected)</strong> : 순환이 없는 연결 그래프로 구현된다.</p>
 </li>
+</ul>
+<h4 id="시간-복잡도-5" style="position:relative;"><a href="#%EC%8B%9C%EA%B0%84-%EB%B3%B5%EC%9E%A1%EB%8F%84-5" aria-label="시간 복잡도 5 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>시간 복잡도</h4>
+<p><strong>그래프(Graph)의 시간 복잡도∙공간 복잡도는 노드(N), 정점(V), 엣지(E)를 사용하여 표현한다.</strong></p>
+<ul>
+<li><strong>두 노드의 연결 확인</strong> : 인접 행렬의 경우 고유 인덱스로 바로 접근 가능하여 <code class="language-text">O(1)</code>의 시간 복잡도를 갖는다. 인접 리스트의 경우 한 노드의 인접 리스트 안의 특정 노드가 있는지 확인해야 하기 때문에, 최악의 경우 전체를 봐야하므로 <code class="language-text">O(N)</code> or <code class="language-text">O(V)</code>의 시간 복잡도를 갖는다.</li>
+<li><strong>한 노드에 연결된 모든 노드 확인</strong> : 인접 행렬의 경우 특정 노드를 나타내는 행렬을 돌아서 연결된 노드를 가져와야 하기 때문에, <code class="language-text">O(N)</code> or <code class="language-text">O(V)</code>의 시간 복잡도를 갖는다. 인접 리스트의 경우 연결된 노드의 갯수는 곧 엣지의 갯수이므로, 엣지의 갯수만 확인하면 되므로 <code class="language-text">O(E)</code>의 시간 복잡도를 갖는다.</li>
+<li><strong>추가/삭제(Insert/Delete)</strong> : 추가의 경우 노드/정점이나 엣지 모두 <code class="language-text">O(1)</code>의 시간 복잡도를 갖는다. 하지만, 삭제의 경우에는 노드/정점의 경우 특정 노드/정점을 찾는 시간과 그와 연결된 엣지를 삭제해야 하므로 <code class="language-text">O(N+E)</code> or <code class="language-text">O(V+E)</code>의 시간 복잡도를 갖는다. 엣지의 경우 특정 엣지를 찾는 시간이 소요되므로 <code class="language-text">O(E)</code>의 시간 복잡도를 갖는다.</li>
 </ul>
 <br/>
 <h4 id="트리tree" style="position:relative;"><a href="#%ED%8A%B8%EB%A6%ACtree" aria-label="트리tree permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>트리(Tree)</h4>
+<p><img src="https://i0.wp.com/hanamon.kr/wp-content/uploads/2021/07/%E1%84%8C%E1%85%A1%E1%84%85%E1%85%AD%E1%84%80%E1%85%AE%E1%84%8C%E1%85%A9-%E1%84%90%E1%85%B3%E1%84%85%E1%85%B5-%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%8B%E1%85%A5.png?resize=975%2C551&#x26;ssl=1" alt="Tree 이미지"></p>
 <ul>
-<li>뿌리와, 뿌리 또는 다른 꼭짓점을 단 하나의 부모로 갖는 꼭짓점들로 이루어진 구조. 부모 자식 관계는 변으로 표현된다.</li>
+<li><strong>노드로 구성된 계층적 자료구조이다.</strong></li>
+<li>뿌리와, 뿌리 또는 다른 꼭짓점을 단 하나의 부모로 갖는 꼭짓점들로 이루어진 구조이며, 부모 자식 관계는 변으로 표현된다.</li>
+<li><code class="language-text">최상위(Root)노드</code>를 만들고, <code class="language-text">부모(Parent)노드</code>에 <code class="language-text">자식(Child)노드</code>를 추가하고 그리고 그 자식 노드가 부모 노드로써 또 다른 자식 노드를 추가하는 구조를 가지고 있다.</li>
+<li>트리에 또 다른 트리가 있는 <code class="language-text">재귀적 자료구조</code>이다.</li>
+<li>트리는 아래와 같이 목적 방식에 따라 구현할 수 있다.
+<ul>
+<li><strong>이진 트리(Binary Tree)</strong> : 모든 노드들이 둘 이하의 자식을 가진 트리</li>
+<li><strong>이진탐색 트리(Binary Search Tree)</strong> : 이진탐색(binary search)과 연결리스트(linked list)를 결합한 방식</li>
+<li><strong>균형 트리(Balanced Tree)</strong> : 이진 탐색트리에 새로운 노드가 삽입이 되면 부모의 노드보다 작은 값은 왼쪽으로 큰 값은 오른쪽으로 추가하면서 서브트리가 계속 구성되는 방식</li>
+<li><strong>힙 트리(Heap Tree)</strong> : 부모의 값은 항상 자식(들)의 값보다 크거나(Max heap), 작아야(Min heap)하는 규칙을 가진 트리로 여러개의 값 중에서 가장 크거나 작은 값을 빠르게 찾기 위해 만들어짐</li>
 </ul>
-<br/>
-<h4 id="이진-트리binary-tree" style="position:relative;"><a href="#%EC%9D%B4%EC%A7%84-%ED%8A%B8%EB%A6%ACbinary-tree" aria-label="이진 트리binary tree permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>이진 트리(Binary Tree)</h4>
-<ul>
-<li>자식이 최대 두 개인 트리.</li>
-</ul>
-<br/>
-<h4 id="힙heap" style="position:relative;"><a href="#%ED%9E%99heap" aria-label="힙heap permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>힙(Heap)</h4>
-<ul>
-<li>이진트리의 일종으로 이진트리에 어떤 특성을 부여한 것이라 할 수 있다.</li>
+</li>
 </ul>
 <br/>
 <h2 id="참고링크" style="position:relative;"><a href="#%EC%B0%B8%EA%B3%A0%EB%A7%81%ED%81%AC" aria-label="참고링크 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>참고링크</h2>
 <p><a href="https://visualgo.net/en">VISUALGO.net</a></p>
 <p><a href="https://ko.wikipedia.org/wiki/%EC%9E%90%EB%A3%8C_%EA%B5%AC%EC%A1%B0">위키백과 - 자료 구조</a></p>
 <p><a href="https://ko.wikipedia.org/wiki/%ED%95%B4%EC%8B%9C_%EC%B6%A9%EB%8F%8C">해시 충돌</a></p>
+<p><a href="https://adrianmejia.com/">adrianmejia</a></p>
 <p><a href="https://velog.io/@jha0402/Data-structure-%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%9D%BC%EB%A9%B4-%EA%BC%AD-%EC%95%8C%EC%95%84%EC%95%BC-%ED%95%A0-7%EA%B0%80%EC%A7%80-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0">[Data structure] 개발자라면 꼭 알아야 할 7가지 자료구조</a></p>
 <p><a href="https://re-code-cord.tistory.com/entry/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%EB%8C%80%ED%91%9C%EC%A0%81%EC%9D%B8-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%EC%A0%95%EB%A6%AC">[자료구조] 대표적인 자료구조 정리</a></p>
 <p><a href="https://blog.naver.com/PostView.nhn?blogId=soj12345&#x26;logNo=221373403400&#x26;parentCategoryNo=&#x26;categoryNo=14&#x26;viewDate=&#x26;isShowPopularPosts=false&#x26;from=postView">[Python] 자료형4- 튜플형</a></p>
@@ -285,9 +296,8 @@
 <p><a href="#%EB%B9%84%EC%84%A0%ED%98%95-%EA%B5%AC%EC%A1%B0">비선형 구조</a></p>
 <ul>
 <li><a href="#%EA%B7%B8%EB%9E%98%ED%94%84graph">그래프(Graph)</a></li>
+<li><a href="#%EC%8B%9C%EA%B0%84-%EB%B3%B5%EC%9E%A1%EB%8F%84-5">시간 복잡도</a></li>
 <li><a href="#%ED%8A%B8%EB%A6%ACtree">트리(Tree)</a></li>
-<li><a href="#%EC%9D%B4%EC%A7%84-%ED%8A%B8%EB%A6%ACbinary-tree">이진 트리(Binary Tree)</a></li>
-<li><a href="#%ED%9E%99heap">힙(Heap)</a></li>
 </ul>
 </li>
 </ul>
