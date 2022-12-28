@@ -158,7 +158,7 @@ categories: JavaScript 데이터
 ![Deque 이미지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FptOhu%2FbtqRTSqAZRB%2FOrlMCriLQ3RTFVNB7hhRLk%2Fimg.png)
 
 - Double-ended queue의 약자로 삽입과 삭제가 양쪽 끝에서 모두 발생할 수 있는 선형 자료구조이다.
-- 덱이라고도 불리지만 양방향 큐라고도 불리는 듯하다.
+- 덱이라고도 불리지만 `양방향 큐`라고도 불리는 듯하다.
 
 <br/>
 

@@ -31,6 +31,10 @@ categories: 앞으로만
 
 [Tech Interview for developer](https://gyoogle.dev/blog/)
 
+## ⭐️ 내가 자주보는 사람 블로그
+
+[뚱이로고 - yceffort](https://yceffort.kr/)
+
 <br/>
 
 ```toc

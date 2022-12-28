@@ -135,7 +135,7 @@ export default App;
 
 3. **트리 쉐이킹 적용**
 
-- [트리 쉐이킹(Tree Shaking)](https://rnfltpgus.github.io/treeshaing/)
+- [트리 쉐이킹(Tree Shaking)](https://rnfltpgus.github.io/knowledge/treeshaing/)
 
 <br/>
 
