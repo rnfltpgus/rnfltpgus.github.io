@@ -21,11 +21,11 @@ categories: JavaScript 개발지식
 
 ![JIT 이미지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb2Jzmc%2Fbtq56j9e47D%2FNPkxYsJWSRNgS7OrsGc9mK%2Fimg.png)
 
-**일반적인 Compiler 방식에는 `동적 컴파일(interpreter)`과 `정적 컴파일(Compiler)`이 있습니다.**
+**일반적인 Compiler 방식에는 `동적 컴파일(interpreter)`과 `정적 컴파일(Compiler)`이 있다.**
 
-**`JIT(Just In Time)은`** 이 두개의 컴파일 방식을 합친 것으로 실행시점에서 인터프리터 방식으로 바이트 코드를 생성합니다.
+**`JIT(Just In Time)은`** 이 두개의 컴파일 방식을 합친 것으로 실행시점에서 인터프리터 방식으로 바이트 코드를 생성한다.
 
-그 후 **`V8 Engine은`** 바이트 코드를 기계어 코드로 만들고, 그 코드를 캐싱하여, 같은 함수가 여러 번 불릴 때 매번 기계어 코드를 생성하는 것을 방지합니다.
+그 후 **`V8 Engine은`** 바이트 코드를 기계어 코드로 만들고, 그 코드를 캐싱하여, 같은 함수가 여러 번 불릴 때 매번 기계어 코드를 생성하는 것을 방지한다.
 
 <br/>
 

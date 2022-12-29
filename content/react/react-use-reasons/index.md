@@ -108,7 +108,7 @@ Facebook에서 주도하여 개발한 `웹 어플리케이션의 UI를 효과적
 
 ### DOM 이란?
 
-![DOM 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2653904a-d039-4f9c-8f72-4dd53938d266/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-08-06_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_10.09.49.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221223%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221223T130859Z&X-Amz-Expires=86400&X-Amz-Signature=ff7700d295813588aa3c50c5336a084740892901194fd13865ba3a098283d0f6&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA%25202022-08-06%2520%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE%252010.09.49.png%22&x-id=GetObject)
+![DOM 이미지](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/DOM-model.svg/1200px-DOM-model.svg.png)
 
 - 웹 페이지에 들어가있는 모든 엘리먼트를 트리형태로 작성한 것을 말함
 
@@ -116,7 +116,7 @@ Facebook에서 주도하여 개발한 `웹 어플리케이션의 UI를 효과적
 
 ### Virtual Dom(이하 가상 DOM)이란?
 
-![Virtual Dom 설멍 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/01446890-cc04-49cd-bc1a-1ec80ff3e080/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-08-06_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_10.11.14.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221223%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221223T130525Z&X-Amz-Expires=86400&X-Amz-Signature=a5ced12faf7dcf85442cb035a93fa7d8c13e758ea34509d2d19269bab39d9422&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA%25202022-08-06%2520%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE%252010.11.14.png%22&x-id=GetObject)
+![Virtual Dom 설멍 이미지](https://elmprogramming.com/images/chapter-5/5.3-virtual-dom/elm-runtime-virtual-dom.svg)
 
 - 실제 DOM에 접근하여 조작하는 대신에 HTML DOM을 추상화시켜, 자바스크립트 객체로 표현된 복사본
 - `수정사항이 여러 가지 있더라도`, `한 번만 렌더링을 일으킴`
