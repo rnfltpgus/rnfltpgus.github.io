@@ -32,17 +32,17 @@ categories: 개발지식
 
    `HTTP Method` + `path부터 url 정보` + `HTTP 버전 정보` + `Host 정보` (HTTP 요청 메시지 구성)
 
-   ![HTTP GET 요청 메시지 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a0b0e375-1b42-4034-a525-583fb1498d73/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-10-23_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.29.44.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221222T065622Z&X-Amz-Expires=86400&X-Amz-Signature=b9e2a185ce9a482d790e9282827082109ba6ce049fa73b002a31564ea8b1e0ce&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA%25202022-10-23%2520%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE%25204.29.44.png%22&x-id=GetObject)
+   ![HTTP GET 요청 메시지 이미지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdM2OHy%2FbtqV2betcva%2F87Fk9IlSlQ6vFdCik3pKW0%2Fimg.png)
 
 3. 생성된 HTTP 요청 메시지는 소켓 라이브러리를 통해 TCP / IP로 전달되는데, 데이터를 전달하기 이전에 3-way-handshake 방식으로 TCP / IP를 연결한 뒤에 메시지를 전달한다.
 
-   ![3-way-handshake 방식 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4220179e-94b5-4b3f-b555-7dc1663b3e23/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-10-23_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.33.11.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221222T065640Z&X-Amz-Expires=86400&X-Amz-Signature=05704c68dd449d6599f4de43a97102785274271845afcda0b3c65f365a67f25f&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA%25202022-10-23%2520%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE%25204.33.11.png%22&x-id=GetObject)
+   ![3-way-handshake 방식 이미지](https://velog.velcdn.com/images/sewonkim/post/1aa93233-87de-44b7-b7ed-6d37235216d4/image.png)
 
 4. TCP / IP 에서 HTTP 요청 메시지를 포함하는 TCP / IP 패킷을 생성한다.
 5. 네트워크 라우팅을 통해 목적지 서버로 요청 패킷이 도달한다.
 6. TCP / IP 패킷 내부의 HTTP 요청 메시지를 해석한 뒤, 이에 맞는 HTTP 응답 메시지를 만들어 낸다.
 
-   ![HTTP POST 응답 메시지 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/602b6b33-9c71-4d04-804a-85caffe036bc/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-10-23_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.35.26.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221222T065722Z&X-Amz-Expires=86400&X-Amz-Signature=875bd1267d4fb530b32752f4398d0ea3ed8cb26fd8fd949cdec393e0704a2a9e&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA%25202022-10-23%2520%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE%25204.35.26.png%22&x-id=GetObject)
+   ![HTTP POST 응답 메시지 이미지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbkBRZH%2FbtqVV2JEnFj%2FpFjfpwMOjGI2lCLIyf6dkk%2Fimg.png)
 
    `HTTP 버전` + `상태코드` + `Content-Type(응답 데이터 형식)` + `Content-Length(응답 데이터의 길이)` + `데이터`
 

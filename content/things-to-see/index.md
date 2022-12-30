@@ -1,6 +1,6 @@
 ---
-emoji: 🛍️
-title: 앞으로만 가지
+emoji: 🏃🏻🏃🏻‍♀️🏃🏻‍♂️
+title: 앞으로만 보고 달려, 하지만 뒤도 가끔 보곤해
 date: '2022-12-00 00:00:00'
 author: JungSany
 tags: blog gatsby JungLog log jung things see 동기부여 앞으로만 가지
@@ -30,6 +30,8 @@ categories: 앞으로만
 [패턴에 대해서 공부한다면](https://www.patterns.dev/posts/)
 
 [Tech Interview for developer](https://gyoogle.dev/blog/)
+
+<br/>
 
 ## ⭐️ 내가 자주보는 사람 블로그
 
