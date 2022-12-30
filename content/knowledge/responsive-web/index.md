@@ -27,7 +27,7 @@ categories: 개발지식 ResponsiveWep
 
 1. [뷰 포트(View port)](https://rnfltpgus.github.io/knowledge/responsive-web/viewport/)
 2. 그리드 뷰(GridView)
-3. 미디어 쿼리(Media Query)
+3. [미디어 쿼리(Media Query)](https://rnfltpgus.github.io/knowledge/responsive-web/media-query/)
 
 <br/>
 
