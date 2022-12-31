@@ -104,7 +104,7 @@ const Example = () => {
 
 ## 참고용 CSS
 
-- **display 속성**
+### display 속성
 
 1. inline(default)height, width 속성을 지정할 수 없다.(=Inline element) 한 줄에 이어서 쓴다.ex) span, a
 2. block자동으로 줄바꿈을 하여 하나의 행을 차지하고, width 등의 속성을 지정할 수 있다.ex) div, p, h1
@@ -112,7 +112,9 @@ const Example = () => {
 4. flex레이아웃 배치 툴이다. 내용이 방대하므로 [이 사이트](https://studiomeal.com/archives/197)를 참조하자.justify는 가로 정렬, align은 세로 정렬이라는 것을 명심하자. flex-direction을 이용하여 반응형 웹을 구현할 것이다.
 5. grid마찬가지로 레이아웃 배치 툴이며, [이 사이트](https://studiomeal.com/archives/533)에 잘 정리되어 있다.
 
-- **position 속성**
+<br/>
+
+### position 속성
 
 1. static(default)요소를 일반적인 흐름에 맞게 배치하고, top/left/z-index 등의 속성을 사용할 수 없다. 일반적인 흐름이란 요소들의 기본적인 display 속성을 고려하여 배치한다는 뜻이다.
 2. relative요소를 일반적인 흐름에 맞게 배치하고, **배치된 위치를 기준으로 상대적으로** top, left 등의 속성을 적용할 수 있다.

@@ -7,6 +7,8 @@ tags: blog gatsby JungLog log jung responsive wep 반응형 웹
 categories: 개발지식 ResponsiveWep
 ---
 
+![반응형 웹 이미지](https://mixedcode.com/Upload/Board/res111.jpg)
+
 # 반응형 웹이란?
 
 > **Google Developers**
@@ -23,15 +25,41 @@ categories: 개발지식 ResponsiveWep
 
 <br/>
 
-## 반응형 웹을 설계하기 위한 방법
+## 반응형 웹을 설계하기 위한 핵심기술
 
-1. [뷰 포트(View port)](https://rnfltpgus.github.io/knowledge/responsive-web/viewport/)
-2. 그리드 뷰(GridView)
-3. [미디어 쿼리(Media Query)](https://rnfltpgus.github.io/knowledge/responsive-web/media-query/)
+**1. 가변 그리드(Fluid Grid)**
+
+- `유동형 그리드`라고 부르기도 한다.
+- 설계자가 그래픽 요소를 합리적이고 흡수하기 쉬운 방식으로 구성할 수 있는 뼈대이자 프레임워크의 역할을 한다.
+- **전체 `UI`에 `통일성을 부여`하고 `일관된 디자인을 유지하여 화면의 전체적인 균형을 맞출 수 있어 더욱 견고한 디자인을 제공`할 수 있다.**
+- 이는 **사용자에게 전문적이고 신뢰성과 안정감을 제공**할 수 있다.
+- **`px`과 같이 `고정된 단위가 아니라` 상황에 맞게 변할 수 있는 단위인 `em`이나 `%`를 `사용하여 브라우저 크기에 따라 유동적으로 변할 수 있게 한다.`**
+
+**2. 유연한 이미지(Flexible Images)**
+
+- 모든 화면에서 볼 수 있도록 화면 폭보다 큰 이미지를 다운받고 이미지의 넓이값을 100%, 높이값을 자동(auto)로 설정하는 방법이다.
+- 단순히 이미지를 화면 폭에 맞게 가로 및 세로의 길이를 줄였다 늘였다 할 수 있다.
+- 다만 웹을 기준으로 할 경우 모바일에서는 해상도가 높은 이미지를 크기만 줄여 **메모리를 낭비하는 상황이 발생할 수 있다.**
+- 이미지 외에 비디오 등을 포함시켜 `유동형 미디어(Flexible Media)`라고 하기도 한다.
+
+**3. [미디어 쿼리(Media Query)](https://rnfltpgus.github.io/knowledge/responsive-web/media-query/)**
+
+- 디바이스 관련 다양한 정보를 이용하여 최적화된 화면을 제공한다.
+- 웹 문서 내 미디어 스타일 설정에 사용하는 미디어 쿼리를 이용하면 단말 화면의 폭이나 높이에 따라 레이아웃이 자동으로 구현된다.
+- 대표적인 기술로 종속 스타일 시트 3 버전(CSS3:Cascading Style Sheets Version 3)이 있다.
+- `@media 태그`를 CSS 내부 혹은 링크로 연결하여 사용한다.
+
+**4. [뷰포트(View Port)](https://rnfltpgus.github.io/knowledge/responsive-web/viewport/)**
+
+- **웹페이지가 사용자에게 보여지는 영역을 의미하며, 최적의 환경을 제공하기 위해 화면 너비에 맞춰 웹페이지를 랜더링한다.**
+
+**5. 웹표준**
+
+- 국제 웹표준화 기구인 W3C에서 지정한 HTML, CSS3로 소스코드를 작성한다.
 
 <br/>
 
-## 장점과 단점
+## 반응형 웹의 장점과 단점
 
 ### 장점
 
@@ -57,11 +85,19 @@ categories: 개발지식 ResponsiveWep
 
 <br/>
 
+## 용어설명
+
+**그리드** : 디자인에서 내용을 구성하는데 사용되는 일련의 직선 또는 곡선이 교차하는 구조를 의미
+
+<br/>
+
 ## 참고링크
 
 [반응형 웹 디자인 기초](https://web.dev/responsive-web-design-basics/)
 
 [반응형 웹, 개념 이해하기](https://yozm.wishket.com/magazine/detail/883/)
+
+[해시넷 - 반응형웹](http://wiki.hash.kr/index.php/%EB%B0%98%EC%9D%91%ED%98%95%EC%9B%B9)
 
 <br/>
 
