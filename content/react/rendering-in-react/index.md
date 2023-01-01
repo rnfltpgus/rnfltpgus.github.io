@@ -1,9 +1,9 @@
 ---
-emoji: 🩹
-title: React - Suspense, lazy에 대해 잠깐
-date: '2023-01-01 15:33:00'
+emoji: 🎢
+title: React 렌더링에 대해서
+date: '2023-01-01 16:30:00'
 author: JungSany
-tags: blog gatsby JungLog log jung react suspense lazy react18
+tags: blog gatsby JungLog log jung react suspense lazy react18 rendering setstate update setter
 categories: React
 ---
 
