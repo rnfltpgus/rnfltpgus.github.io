@@ -17,6 +17,7 @@ categories: React
 
 - [React란? 그리고 사용하는 이유와 단점](https://rnfltpgus.github.io/react/react-use-reasons/)
 - [Props와 State에 대해서](https://rnfltpgus.github.io/react/props-state/)
+- [React는 왜 불변성을 유지해야되나?](https://rnfltpgus.github.io/react/react-immutability/)
 
 <br/>
 

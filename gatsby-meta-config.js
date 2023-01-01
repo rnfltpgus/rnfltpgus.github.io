@@ -9,7 +9,7 @@ module.exports = {
       repo: `rnfltpgus/rnfltpgus.github.io`,
     },
   },
-  ga: '0', // Google Analytics Tracking ID
+  ga: '229651132',
   author: {
     name: `정세현`,
     bio: {

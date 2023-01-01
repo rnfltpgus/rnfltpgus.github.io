@@ -57,7 +57,9 @@ function Seo({ description, title }) {
           content: `website`,
         },
       ]}
-    />
+    >
+      <meta name="google-site-verification" content="qTBSzqiqdSkGX8_SeLyMrqLrDQt46qY8sRbTu2GgGpI" />
+    </Helmet>
   );
 }
 

@@ -30,13 +30,13 @@ module.exports = {
           },
           'branch-deploy': {
             policy: [{ userAgent: '*', disallow: ['/'] }],
-            sitemap: null,
-            host: null,
+            sitemap: 'https://rnfltpgus.github.io/sitemap.xml',
+            host: 'https://rnfltpgus.github.io/',
           },
           'deploy-preview': {
             policy: [{ userAgent: '*', disallow: ['/'] }],
-            sitemap: null,
-            host: null,
+            sitemap: 'https://rnfltpgus.github.io/sitemap.xml',
+            host: 'https://rnfltpgus.github.io/',
           },
         },
       },
