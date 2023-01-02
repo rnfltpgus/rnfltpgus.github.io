@@ -37,6 +37,8 @@ categories: 앞으로만
 
 [뚱이로고 - yceffort](https://yceffort.kr/)
 
+[daleseo](https://www.daleseo.com/)
+
 <br/>
 
 ```toc

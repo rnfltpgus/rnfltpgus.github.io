@@ -9,7 +9,7 @@ module.exports = {
       repo: `rnfltpgus/rnfltpgus.github.io`,
     },
   },
-  ga: '229651132',
+  ga: 'G-JJZ3GZT0L1',
   author: {
     name: `정세현`,
     bio: {
