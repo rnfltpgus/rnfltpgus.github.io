@@ -31,13 +31,19 @@ ReactDOM.hydrate(<App />, document.getElementById('app'));
 
 # React Helmet
 
-**React는 싱글 페이지 애플리케이션(Single Page Application, SPA)이라, React로 구축된 웹 사이트의 경우 크롤러들이 단 하나의 파일인 `public/index.html` 만을 읽게 된다.**
+**React는 싱글 페이지 애플리케이션(Single Page Application, SPA)이라, React로 구축된 웹 사이트의 경우 크롤러들이 단 하나의 파일 `public/index.html` 만을 읽게 된다.**
 
-**이는 `각각의 페이지에 대한 정보를 읽지 못한다`는 단점이 있다.**
+**이처럼 싱글 페이지 애플리케이션의 경우 `각각의 페이지에 대한 정보를 읽지 못한다`는 단점이 있다.**
 
-이러한 `단점`을 극복할 수 있는 방안으로는 `react-helmet 라이브러리`를 사용하면 된다.
+이러한 단점을 극복하기 위해서는 `react-helmet 라이브러리`를 이용하여 사이트에 대한 메타 태그들을 읽을 수 있게 만들 수 있다.
 
-## 사용방법에 대해서는 작성중..
+<br/>
+
+## 함께보면 좋은 글
+
+[Semantic Markup 이란?](https://rnfltpgus.github.io/knowledge/semantic-markup/)
+
+[검색엔진최적화(Search Engine Optimization, SEO)](https://rnfltpgus.github.io/knowledge/search-engine-optimization/)
 
 <br/>
 
