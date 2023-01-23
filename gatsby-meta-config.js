@@ -49,17 +49,22 @@ module.exports = {
       {
         date: '2022.01 ~ 03',
         activity: '바닐라코딩 Prep',
-        links: {},
+        links: { post: 'https://www.vanillacoding.co/prep' },
       },
       {
         date: '2022.03 ~ 07',
         activity: '바닐라코딩 BootCamp',
+        links: { post: 'https://www.vanillacoding.co/bootcamp' },
+      },
+      {
+        date: '2022.08 ~ 12',
+        activity: '취준',
         links: {},
       },
       {
-        date: '2022.08 ~ ',
-        activity: '취준',
-        links: {},
+        date: '2023.01 ~',
+        activity: '타운즈',
+        links: { post: 'https://www.towncar.co.kr/' },
       },
     ],
 

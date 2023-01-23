@@ -163,7 +163,7 @@ export default App;
 
 **Third-Party**: [써드 파티(3rd party)란?](https://rnfltpgus.github.io/3rd-party/)
 
-**Tree Shaking:** [트리 쉐이킹(Tree Shaking)](https://rnfltpgus.github.io/treeshaing/)
+**Tree Shaking:** [트리 쉐이킹(Tree Shaking)](https://rnfltpgus.github.io/knowledge/treeshaing/)
 
 **[코로케이션(colocation)](https://ko.reactjs.org/docs/faq-structure.html):** 자주 함께 변경되는 파일들을 같이 보관하는 것
 
