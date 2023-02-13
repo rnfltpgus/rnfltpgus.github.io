@@ -82,11 +82,6 @@
 <li><strong>블럭요소 : <code class="language-text">div</code>, <code class="language-text">table</code>, <code class="language-text">h1</code> ~ <code class="language-text">h6</code>, <code class="language-text">p</code>, <code class="language-text">form</code>, <code class="language-text">ul</code>, <code class="language-text">ol</code>, <code class="language-text">li</code>, <code class="language-text">dl</code>, <code class="language-text">dt</code>, <code class="language-text">dd</code>, <code class="language-text">pre</code>, <code class="language-text">blockquote</code> 등</strong></li>
 <li><strong>인라인요소 : <code class="language-text">span</code>, <code class="language-text">a</code>, <code class="language-text">br</code>, <code class="language-text">em</code>, <code class="language-text">strong</code>, <code class="language-text">input</code>, <code class="language-text">label</code>, <code class="language-text">img</code></strong></li>
 </ul>
-<h3 id="css-속성의-display를-이용한다면" style="position:relative;"><a href="#css-%EC%86%8D%EC%84%B1%EC%9D%98-display%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C%EB%8B%A4%EB%A9%B4" aria-label="css 속성의 display를 이용한다면 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>css 속성의 display를 이용한다면?</h3>
-<p>태그의 요소를 변경할 수 있다.</p>
-<div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css">  <span class="token selector">div</span> <span class="token punctuation">{</span> <span class="token property">display</span><span class="token punctuation">:</span> inline <span class="token punctuation">}</span>
-  <span class="token selector">div</span> <span class="token punctuation">{</span> <span class="token property">display</span><span class="token punctuation">:</span> block <span class="token punctuation">}</span>
-  <span class="token selector">div</span> <span class="token punctuation">{</span> <span class="token property">display</span><span class="token punctuation">:</span> inline-block <span class="token punctuation">}</span></code></pre></div>
 <br/>
 <h3 id="특징-및-주의점" style="position:relative;"><a href="#%ED%8A%B9%EC%A7%95-%EB%B0%8F-%EC%A3%BC%EC%9D%98%EC%A0%90" aria-label="특징 및 주의점 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>특징 및 주의점</h3>
 <ol>
@@ -94,6 +89,12 @@
 <li>블럭요소들 중에서도 인라인요소만 포함할 수 있는 것들이 있습니다.(<code class="language-text">h1</code> ~ <code class="language-text">h6</code>, <code class="language-text">p</code>)</li>
 <li>css 속성의 <code class="language-text">display</code>를 이용하여 인라인 요소를 블럭화하여 블럭요소 내부에 포함시킬 수 있지만(브라우저에서 보여지는데는 아무런 문제가 없음), 유효성에 어긋난다.</li>
 </ol>
+<ul>
+<li>태그의 요소를 변경할 수 있다.</li>
+</ul>
+<div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css">  <span class="token selector">div</span> <span class="token punctuation">{</span> <span class="token property">display</span><span class="token punctuation">:</span> inline <span class="token punctuation">}</span>
+  <span class="token selector">div</span> <span class="token punctuation">{</span> <span class="token property">display</span><span class="token punctuation">:</span> block <span class="token punctuation">}</span>
+  <span class="token selector">div</span> <span class="token punctuation">{</span> <span class="token property">display</span><span class="token punctuation">:</span> inline-block <span class="token punctuation">}</span></code></pre></div>
 <br/>
 <h3 id="참고링크" style="position:relative;"><a href="#%EC%B0%B8%EA%B3%A0%EB%A7%81%ED%81%AC" aria-label="참고링크 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>참고링크</h3>
 <p><a href="https://ux.stories.pe.kr/44">HTML5 태그의 블록 요소와 인라인 요소</a></p>
@@ -106,7 +107,6 @@
 <li><a href="#%EB%B8%94%EB%9F%AD%EC%9A%94%EC%86%8Cblock-element">블럭요소(Block element)</a></li>
 <li><a href="#%EC%9D%B8%EB%9D%BC%EC%9D%B8%EC%9A%94%EC%86%8Cinline-element">인라인요소(Inline element)</a></li>
 <li><a href="#%EB%B8%94%EB%9F%AD%EC%9A%94%EC%86%8C%EC%99%80-%EC%9D%B8%EB%9D%BC%EC%9D%B8%EC%9A%94%EC%86%8C%EC%9D%98-%EC%A2%85%EB%A5%98">블럭요소와 인라인요소의 종류</a></li>
-<li><a href="#css-%EC%86%8D%EC%84%B1%EC%9D%98-display%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C%EB%8B%A4%EB%A9%B4">css 속성의 display를 이용한다면?</a></li>
 <li><a href="#%ED%8A%B9%EC%A7%95-%EB%B0%8F-%EC%A3%BC%EC%9D%98%EC%A0%90">특징 및 주의점</a></li>
 <li><a href="#%EC%B0%B8%EA%B3%A0%EB%A7%81%ED%81%AC">참고링크</a></li>
 </ul>
