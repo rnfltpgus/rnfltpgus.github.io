@@ -39,6 +39,8 @@ categories: 앞으로만
 
 [daleseo](https://www.daleseo.com/)
 
+[위펄슨 기술 블로그](https://tech.weperson.com)
+
 <br/>
 
 ```toc

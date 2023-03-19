@@ -58,7 +58,11 @@ categories: 짜투리
 
 ### Github
 
-- `git merge origin/브랜치명`을 습관화해서 협업 작업시, 충돌 여부를 줄이자.
+- 협업 작업시, 충돌 여부를 줄이기 위해서 아래의 명령어를 기억하자. (습관화가 중요 피알전이나 커밋전에)
+    - git merge
+    - git pull
+    - git fetch
+    - git push
 - 패치까지 적용
 
 <br/>
@@ -84,6 +88,37 @@ categories: 짜투리
 
 - 검색 창에 "Format on save" 를 검색한 뒤 체크 박스를 체크한다.
 - 이후 파일을 저장 할 때마다 prettier가 자동으로 적용된다 :)
+
+<br/>
+
+### datagrip
+- 명령문 실행: Cmd/Ctrl+Enter
+- 인텐션 액션 표시: Opt+Enter/Alt+Enter
+- 전체 검색: Shift 두 번 누르기
+- 최근 파일: Cmd/Ctrl+E
+- 새 콘솔 열기: Cmd+Shift+L/Ctrl+Shift+Q
+- 코드 서식 다시 지정: Cmd+Opt+L/Ctrl+Alt+L
+- 모든 도구 창 숨김/복원: Cmd/Ctrl+Shift+F12
+- 기록에서 붙여넣기: Cmd/Ctrl+Shift+V
+- 리팩터링 | 이름 변경: Shift+F6
+- 코드 생성: Cmd+N/Alt+Insert
+
+<br/>
+
+### sql
+- ON - JOIN이 실행되기 전
+- WHERE - JOIN이 실행된 후
+- LEFT JOIN 합집합
+- INNER JOIN 교집합
+- 결과가 같다면 LEFT JOIN 대신 INNER JOIN을 사용
+#### 쿼리문을 작성할때
+- sql문법을 작성시, 띄어쓰기나 개행을 안할 경우 예약어랑 일반문자랑 섞여서 sql 문 즉 문법이 깨질수 있다.
+
+<br/>
+
+### 일반함수와 화살표함수의 차이
+- 나중에 정리
+https://velog.io/@yjh8806/화살표-함수와-일반-함수의-차이
 
 <br/>
 
