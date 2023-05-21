@@ -1,9 +1,9 @@
 ---
 emoji: 🍄
-title: [React Native] React Native Navigation의 navigate와 push 차이점
+title: React Native Navigation - navigate와 push 차이점
 date: '2023-03-18 15:34:00'
 author: JungSany
-tags: blog gatsby JungLog log jung react reactnative navigation navigate push
+tags: blog gatsby JungLog log jung react react native navigation navigate push
 categories: ReactNative
 ---
 
@@ -17,7 +17,7 @@ React Native에서 만든 컴포넌트를 페이지화 시키고, 해당 페이�
 
 [React Navigation 공식](https://reactnavigation.org)
 
-[[앱개발]-리액트개념 React-navigation StatusBar](https://velog.io/@dlghgus5656/앱개발-vb06gkj3)
+[리액트개념 React-navigation StatusBar](https://velog.io/@dlghgus5656/앱개발-vb06gkj3)
 
 <br/>
 
